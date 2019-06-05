@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-05T02:38:36.370Z</updated>
+    <updated>2019-06-05T12:18:45.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -11,35 +11,34 @@
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
     <entry>
-        <title type="html"><![CDATA[Hello World!]]></title>
-        <id>https://ducenand.github.io//post/hello-gridea</id>
-        <link href="https://ducenand.github.io//post/hello-gridea">
+        <title type="html"><![CDATA[webpack是什么?]]></title>
+        <id>https://ducenand.github.io//post/hello-webpack</id>
+        <link href="https://ducenand.github.io//post/hello-webpack">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2019-06-05T12:17:35.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的**<em>静态模块打包工具</em>**。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的**<em>静态模块打包工具</em>**。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<blockquote>
+<p>这是官方文档给出的webpack的解释，这里我提取几个关键词理解。</p>
+</blockquote>
+<p><a name="77HGd"></a></p>
+<h3 id="理解模块">理解模块</h3>
+<p>模块,又称构件,是能够单独命名并独立地完成一定功能的程序语句的集合（即程序代码和数据结构的集合体）。它具有两个基本的特征：外部特征和内部特征。外部特征是指模块跟外部环境联系的接口（即其他模块或程序调用该模块的方式，包括有输入输出参数、引用的全局变量）和模块的功能；内部特征是指模块的内部环境具有的特点（即该模块的局部数据和程序代码）。</p>
+<blockquote>
+<p>以上是百度百科给模块的定义，前端模块化一般指javascript的模块，最常见的模块就是npm包。每一个模块可能是最小甚至是最优的代码组合。</p>
+</blockquote>
+<br />
+<a name="t1VzK"></a>
+### 静态模块打包工具
+将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。
+<p><a name="NAmIY"></a></p>
+<h3 id="依赖图dependency-graph">依赖图（dependency graph）</h3>
+<p>任何时候，一个文件依赖于另一个文件，webpack 就把此视为文件之间有_** 依赖关系**_。webpack从命令行或配置文件定义的一个模块列表开始，处理你的应用程序；从入口开始webpack递归的构建一个依赖图，这个依赖图包含着应用程序中所需的每个模块，然后将这些模块打包成少量的bubdle,使浏览器可以执行。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559734733970-08421dc5-5766-4871-919a-233c32b11b87.png#align=left&amp;display=inline&amp;height=455&amp;name=image.png&amp;originHeight=910&amp;originWidth=2030&amp;size=381464&amp;status=done&amp;width=1015" alt="image.png"></p>
+<p>通过上图能够简单理解，webpack就像一个黑盒子，通过这个黑盒子的模块（js、png、sass），将最终转化成浏览器可识别的文件。</p>
+<p>参考：<br />百度百科模块定义：<a href="https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198">https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198</a><br />官网给出的模块解释：<a href="https://webpack.docschina.org/concepts/modules/">https://webpack.docschina.org/concepts/modules/</a><br />官网依赖图解释：<a href="https://webpack.docschina.org/concepts/dependency-graph/">https://webpack.docschina.org/concepts/dependency-graph/</a></p>
 ]]></content>
     </entry>
 </feed>
