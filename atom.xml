@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-06T11:52:58.592Z</updated>
+    <updated>2019-06-17T15:06:47.133Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -11,14 +11,52 @@
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
     <entry>
+        <title type="html"><![CDATA[前端历史演变]]></title>
+        <id>https://ducenand.github.io//post/qian-duan-li-shi-yan-bian</id>
+        <link href="https://ducenand.github.io//post/qian-duan-li-shi-yan-bian">
+        </link>
+        <updated>2019-06-17T15:03:48.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559890643944-38cb01c2-0d6e-467d-a77a-33fd3e4fe59c.png#align=left&amp;display=inline&amp;height=273&amp;name=image.png&amp;originHeight=546&amp;originWidth=1422&amp;size=367243&amp;status=done&amp;width=711" alt="image.png"><br /></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559890643944-38cb01c2-0d6e-467d-a77a-33fd3e4fe59c.png#align=left&amp;display=inline&amp;height=273&amp;name=image.png&amp;originHeight=546&amp;originWidth=1422&amp;size=367243&amp;status=done&amp;width=711" alt="image.png"><br /></p>
+<!-- more --> 
+<p>2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
+<p><a name="9KSDm"></a></p>
+<h3 id="静态页面-1990~2005">静态页面 1990~2005</h3>
+<p>互联网发展早期，前端只负责写静态页面，纯粹的展示功能，JavaScript的作用也只是增加一些特殊效果。这种静态页面不能读取数据库，为了使Web更加充满活力，以PHP、JSP、ASP.NET为主的动态语言相继诞生。<br />这使页面能够获取数据并不断更新，是前后端混合开发模式开端，所有的前端代码和前端数据都是后端生成的，随着后端代码的庞大和逻辑越来越复杂，相继的MVC发展起来。这时后端大多采用MVC模式开发，前端只是后端MVC中的V(视图)；<br />从web的诞生到2005，一直处在_<strong>后端重前端轻</strong>_的状态。</p>
+<p><a name="F6uP8"></a></p>
+<h3 id="ajax阶段-2005">AJAX阶段 2005</h3>
+<p>2004年AJAX技术的诞生改变了前端的发展历史。以Gmail和Google地图这样革命性的产品出现，使得开发者发现，前端的作用不仅仅是展示页面，可以管理数据和用户互动。解决一些糟糕的用户体验，前端页面要想获取后台数据需要刷新整个页面。<br />依稀记得前几年，依托强大的Jquery,一页面的javascript代码使用ajax发送请求渲染DOM的情景。<br /><strong>前端开始慢慢向后端靠拢</strong>。</p>
+<p><a name="EKm8A"></a></p>
+<h3 id="nodejs-的爆发-2009">NODEJS 的爆发 2009</h3>
+<p>2009年Ryan Dahl利用Chrome的V8引擎打造了基于事件循环的异步I/O框架。<br />NODE的诞生，使javascript在服务端的无限可能，更重要的是它构建了一个庞大的生态系统。</p>
+<p>2010年1月，NPM作为node的包管理系统首次发布。开发人员可以依照规范编写nodejs模块，发布到npm上，供其他开发人员下载使用。截止目前2019年6月8日，NPM包数量有<strong>1,003,262，<strong>是世界上最大的包模块管理系统</strong>。</strong></p>
+<p>Node.js 给开发人员带来了无穷的想象，JavaScript <strong>大有一统天下的趋势</strong>。</p>
+<p><a name="yrDTH"></a></p>
+<h3 id="前端mv架构阶段-2010">前端MV**架构阶段 2010</h3>
+<p>随着 HTML5 小程序 的流行，前端再也不是人们眼中的小玩意了，应用功能开发逐步迁移到了前端，前端的代码逻辑逐渐变得复杂起来。<br />2010年10月Backbone MVP架构发布。<br />2010年10月Angular MVC-&gt;MVVM<br />2013年05月React开源 MVVM<br />2014年07月Vue MVVM</p>
+<p>随着这些 MV* 框架的出现，网页逐渐由 Web Site 演变成了 Web App，最终导致了复杂的单页应用（ Single Page Application）的出现。<br />随着 SPA 的兴起，2010年后，前端工程师从开发页面（切模板），逐渐变成了开发**“前端应用”**（跑在浏览器里面的应用程序）。</p>
+<p><a name="rMyAn"></a></p>
+<h3 id="javascript-开发app">javascript 开发App</h3>
+<p>随着 iOS 和 Android 等智能手机的广泛使用，移动浏览器也逐步加强了对 HTML5 特性的支持力度。</p>
+<p>Web APP，即移动端的网站。一般泛指 SPA(Single Page Application)模式开发出的网站。将页面部署在服务器上，然后用户使用各大浏览器访问，不是独立APP，无法安装和发布。</p>
+<p>Hybrid App，即混合开发，也就是半原生半Web的开发模式，有跨平台效果，实质最终发布的仍然是独立的原生APP。</p>
+<p>React Native App，Facebook发起的开源的一套新的APP开发方案,使用JS+部分原生语法来实现功能。</p>
+<p>May 7, 2019谷歌发布 <a href="https://github.com/flutter/flutter_web">Flutter for web</a>，正式宣布 Flutter 成为全平台框架，支持手机、Web、桌面电脑和嵌入式设备。现在学跨平台应用开发，第一个要看的可能不是 React Native，而是 Flutter。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560061486934-49c982aa-aea0-4bd9-959b-168a7a66b275.png#align=left&amp;display=inline&amp;height=418&amp;name=image.png&amp;originHeight=836&amp;originWidth=1396&amp;size=272248&amp;status=done&amp;width=698" alt="image.png"><br />今天的前端已经不再是网页诞生之初的样子，每天都有新的技术框架涌现。<br />GitHub + NPM/BOWER + ES6/ES7/Babel/TypeScript + HTML5 + CSS3/SASS/LESS/PostCSS + React/Vue/Angular + Webpack/Browserify/Gulp/Grunt + Node.js/Express/KOA + Hybrid</p>
+<p>这就是今天的前端。</p>
+<p>参考：<br /><a href="https://blog.csdn.net/freekiteyu/article/details/79927047">前端发展简史</a><br /><a href="https://developers.googleblog.com/2019/05/Flutter-io19.html">全平台框架 Flutter</a>（英文）</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[webpack是什么?]]></title>
         <id>https://ducenand.github.io//post/hello-webpack</id>
         <link href="https://ducenand.github.io//post/hello-webpack">
         </link>
         <updated>2019-06-05T12:17:35.000Z</updated>
-        <summary type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的***静态模块打包工具***。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
+        <summary type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的<strong>静态模块打包工具</strong>。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的***静态模块打包工具***。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
+        <content type="html"><![CDATA[<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的<strong>静态模块打包工具</strong>。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
 <!-- more -->
 <blockquote>
 <p>这是官方文档给出的webpack的解释，这里我提取几个关键词理解。</p>
