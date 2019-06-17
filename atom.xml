@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-17T15:13:51.066Z</updated>
+    <updated>2019-06-17T15:17:56.463Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://ducenand.github.io//post/webpack-yu-gruntgulp-de-qu-bie</id>
         <link href="https://ducenand.github.io//post/webpack-yu-gruntgulp-de-qu-bie">
         </link>
-        <updated>2019-06-17T15:12:45.000Z</updated>
+        <updated>2019-06-14T05:12:45.000Z</updated>
         <summary type="html"><![CDATA[<p>随着前端发展如日冲天，前端项目也越来越复杂，得益于Nodejs的发展，前端模块化、组件化、工程化也大势所趋。这些年Grunt、Gulp到Webpack随着工程化的发展都大行其道。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>随着前端发展如日冲天，前端项目也越来越复杂，得益于Nodejs的发展，前端模块化、组件化、工程化也大势所趋。这些年Grunt、Gulp到Webpack随着工程化的发展都大行其道。</p>
