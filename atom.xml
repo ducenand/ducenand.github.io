@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-17T15:09:35.756Z</updated>
+    <updated>2019-06-17T15:13:51.066Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://ducenand.github.io//images/avatar.png</logo>
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
+    <entry>
+        <title type="html"><![CDATA[Webpack与Grunt、Gulp的区别？]]></title>
+        <id>https://ducenand.github.io//post/webpack-yu-gruntgulp-de-qu-bie</id>
+        <link href="https://ducenand.github.io//post/webpack-yu-gruntgulp-de-qu-bie">
+        </link>
+        <updated>2019-06-17T15:12:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>随着前端发展如日冲天，前端项目也越来越复杂，得益于Nodejs的发展，前端模块化、组件化、工程化也大势所趋。这些年Grunt、Gulp到Webpack随着工程化的发展都大行其道。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>随着前端发展如日冲天，前端项目也越来越复杂，得益于Nodejs的发展，前端模块化、组件化、工程化也大势所趋。这些年Grunt、Gulp到Webpack随着工程化的发展都大行其道。</p>
+<!-- more -->
+<p><strong>前端工程化的早期</strong>，主要是解决重复任务的问题。Grunt、Gulp就是其中代表。比如: 压缩、编译less、sass、地址添加hash、替换等。</p>
+<p>Grunt官网中就说：</p>
+<blockquote>
+<p>对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，完成大部分无聊的工作。</p>
+</blockquote>
+<p>而如今的Webpack更像<strong>一套前端工程化解决方案</strong>。利用强大插件机制，解决前端静态资源依赖管理的问题。</p>
+<p><a name="7KNfw"></a></p>
+<h3 id="webpack作者tobias回复与-grunt-gulp-npm脚本的比较">Webpack作者Tobias回复与 Grunt Gulp NPM脚本的比较</h3>
+<p><strong>Tobias：</strong> NPM脚本对我而言足矣。实际上，说webpack是Grunt/Gulp的替代器并不完全准确。Grunt和Gulp以及NPM脚本都是**<em>任务执行程序</em>**。<br />Webpack是_<strong>模块打包程序</strong>_。这两类程序的目标不一样。但webpack简化了必须“过度使用”Grunt和Gulp和NPM脚本才能实现的Web开发任务也是事实。NPM脚本才是Grunt和Gulp的替代品。<br />不过，除了纯粹的构建之外，任务运行程序也有存在的理由，比如部署、代码检查、版本管理，等等。</p>
+<p><a name="8cFbp"></a></p>
+<h3 id="webpack与grunt-gulp运行机制">Webpack与Grunt、Gulp运行机制</h3>
+<pre><code># grunt gulp 思路
+【遍历源文件】-&gt;【匹配规则】-&gt;【打包】
+做不到按需加载，对打包的资源，是否用到，打包过程不关心。
+
+# webpack
+【入口】-&gt;【模块依赖加载】-&gt;【依赖分析】-&gt;【打包】
+在加载、分析、打包的过程中，可以针对性的做一些解决方案。比如：code split(拆分公共代码)
+</code></pre>
+<p><a name="vG3Ed"></a></p>
+<h3 id="grunt与gulp性能比较">Grunt与Gulp性能比较</h3>
+<p><strong>Grunt:</strong> 每个任务处理完成后存放在本地磁盘.tmp目录中，有本地磁盘的I/O操作，会导致打包速度比较慢。<br />**Gulp: **gulp与grunt都是按任务执行，gulp有一个文件流的概念。每一步构建的结果并不会存在本地磁盘，而是保存在内存中，下一个步骤是可以使用上一个步骤的内存，大大增加了打包的速度。</p>
+<p>参考：<br /><a href="https://www.gruntjs.net/">grunt官网</a><br /><a href="http://www.cross-platform-blog.com/tools/interview-with-webpack-author-tobias-koppers/">webpack作者接受参访文章</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[前端历史演变]]></title>
         <id>https://ducenand.github.io//post/qian-duan-li-shi-yan-bian</id>

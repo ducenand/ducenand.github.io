@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>webpack是什么? | 似水流年</title>
+<title>Webpack与Grunt、Gulp的区别？ | 似水流年</title>
 <meta name="description" content="一万年太久，只争朝夕！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -96,31 +96,35 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">webpack是什么?</h2>
-            <div class="post-date">2019-06-05</div>
+            <h2 class="post-title">Webpack与Grunt、Gulp的区别？</h2>
+            <div class="post-date">2019-06-17</div>
             
             <div class="post-content">
-              <p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的<strong>静态模块打包工具</strong>。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
+              <p>随着前端发展如日冲天，前端项目也越来越复杂，得益于Nodejs的发展，前端模块化、组件化、工程化也大势所趋。这些年Grunt、Gulp到Webpack随着工程化的发展都大行其道。</p>
 <!-- more -->
+<p><strong>前端工程化的早期</strong>，主要是解决重复任务的问题。Grunt、Gulp就是其中代表。比如: 压缩、编译less、sass、地址添加hash、替换等。</p>
+<p>Grunt官网中就说：</p>
 <blockquote>
-<p>这是官方文档给出的webpack的解释，这里我提取几个关键词理解。</p>
+<p>对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，完成大部分无聊的工作。</p>
 </blockquote>
-<p><a name="77HGd"></a></p>
-<h3 id="理解模块">理解模块</h3>
-<p>模块,又称<em>构件</em>,是能够单独命名并独立地完成一定功能的程序语句的集合（即程序代码和数据结构的集合体）。它具有两个基本的特征：外部特征和内部特征。外部特征是指模块跟外部环境联系的接口（即其他模块或程序调用该模块的方式，包括有输入输出参数、引用的全局变量）和模块的功能；内部特征是指模块的内部环境具有的特点（即该模块的局部数据和程序代码）。</p>
-<blockquote>
-<p>以上是百度百科给模块的定义，前端模块化一般指javascript的模块，最常见的模块就是npm包。每一个模块可能是最小甚至是最优的代码组合。</p>
-</blockquote>
-<br />
-<p><a name="t1VzK"></a></p>
-<h3 id="静态模块打包工具">静态模块打包工具</h3>
-<p>将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。</p>
-<p><a name="NAmIY"></a></p>
-<h3 id="依赖图dependency-graph">依赖图（dependency graph）</h3>
-<p>任何时候，一个文件依赖于另一个文件，webpack 就把此视为文件之间有<em>依赖关系</em>。webpack从命令行或配置文件定义的一个模块列表开始，处理你的应用程序；从入口开始webpack递归的构建一个依赖图，这个依赖图包含着应用程序中所需的每个模块，然后将这些模块打包成少量的bubdle,使浏览器可以执行。</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559734733970-08421dc5-5766-4871-919a-233c32b11b87.png#align=left&amp;display=inline&amp;height=455&amp;name=image.png&amp;originHeight=910&amp;originWidth=2030&amp;size=381464&amp;status=done&amp;width=1015" alt="image.png"></p>
-<p>通过上图能够简单理解，webpack就像一个黑盒子，通过这个黑盒子的模块（js、png、sass），将最终转化成浏览器可识别的文件。</p>
-<p>参考：<br />百度百科模块定义：<a href="https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198">https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198</a><br />官网给出的模块解释：<a href="https://webpack.docschina.org/concepts/modules/">https://webpack.docschina.org/concepts/modules/</a><br />官网依赖图解释：<a href="https://webpack.docschina.org/concepts/dependency-graph/">https://webpack.docschina.org/concepts/dependency-graph/</a></p>
+<p>而如今的Webpack更像<strong>一套前端工程化解决方案</strong>。利用强大插件机制，解决前端静态资源依赖管理的问题。</p>
+<p><a name="7KNfw"></a></p>
+<h3 id="webpack作者tobias回复与-grunt-gulp-npm脚本的比较">Webpack作者Tobias回复与 Grunt Gulp NPM脚本的比较</h3>
+<p><strong>Tobias：</strong> NPM脚本对我而言足矣。实际上，说webpack是Grunt/Gulp的替代器并不完全准确。Grunt和Gulp以及NPM脚本都是**<em>任务执行程序</em>**。<br />Webpack是_<strong>模块打包程序</strong>_。这两类程序的目标不一样。但webpack简化了必须“过度使用”Grunt和Gulp和NPM脚本才能实现的Web开发任务也是事实。NPM脚本才是Grunt和Gulp的替代品。<br />不过，除了纯粹的构建之外，任务运行程序也有存在的理由，比如部署、代码检查、版本管理，等等。</p>
+<p><a name="8cFbp"></a></p>
+<h3 id="webpack与grunt-gulp运行机制">Webpack与Grunt、Gulp运行机制</h3>
+<pre><code># grunt gulp 思路
+【遍历源文件】-&gt;【匹配规则】-&gt;【打包】
+做不到按需加载，对打包的资源，是否用到，打包过程不关心。
+
+# webpack
+【入口】-&gt;【模块依赖加载】-&gt;【依赖分析】-&gt;【打包】
+在加载、分析、打包的过程中，可以针对性的做一些解决方案。比如：code split(拆分公共代码)
+</code></pre>
+<p><a name="vG3Ed"></a></p>
+<h3 id="grunt与gulp性能比较">Grunt与Gulp性能比较</h3>
+<p><strong>Grunt:</strong> 每个任务处理完成后存放在本地磁盘.tmp目录中，有本地磁盘的I/O操作，会导致打包速度比较慢。<br />**Gulp: **gulp与grunt都是按任务执行，gulp有一个文件流的概念。每一步构建的结果并不会存在本地磁盘，而是保存在内存中，下一个步骤是可以使用上一个步骤的内存，大大增加了打包的速度。</p>
+<p>参考：<br /><a href="https://www.gruntjs.net/">grunt官网</a><br /><a href="http://www.cross-platform-blog.com/tools/interview-with-webpack-author-tobias-koppers/">webpack作者接受参访文章</a></p>
 
             </div>
             
@@ -132,6 +136,15 @@
                 
               </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ducenand.github.io//post/qian-duan-li-shi-yan-bian">
+                  <h3 class="post-title">
+                    前端历史演变
+                  </h3>
+                </a>
+              </div>
             
 
             
