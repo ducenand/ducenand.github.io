@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-18T02:29:03.191Z</updated>
+    <updated>2019-06-18T11:37:35.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -51,11 +51,12 @@
         <link href="https://ducenand.github.io//post/qian-duan-li-shi-yan-bian">
         </link>
         <updated>2019-06-11T15:03:48.000Z</updated>
-        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559890643944-38cb01c2-0d6e-467d-a77a-33fd3e4fe59c.png#align=left&amp;display=inline&amp;height=273&amp;name=image.png&amp;originHeight=546&amp;originWidth=1422&amp;size=367243&amp;status=done&amp;width=711" alt="image.png"><br /></p>
+        <summary type="html"><![CDATA[<h1 id="前端历史演变">前端历史演变</h1>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559890643944-38cb01c2-0d6e-467d-a77a-33fd3e4fe59c.png#align=left&amp;display=inline&amp;height=273&amp;name=image.png&amp;originHeight=546&amp;originWidth=1422&amp;size=367243&amp;status=done&amp;width=711" alt="image.png"><br /></p>
-<!-- more --> 
-<p>2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
+        <content type="html"><![CDATA[<h1 id="前端历史演变">前端历史演变</h1>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
+<!-- more -->
 <p><a name="9KSDm"></a></p>
 <h3 id="静态页面-1990~2005">静态页面 1990~2005</h3>
 <p>互联网发展早期，前端只负责写静态页面，纯粹的展示功能，JavaScript的作用也只是增加一些特殊效果。这种静态页面不能读取数据库，为了使Web更加充满活力，以PHP、JSP、ASP.NET为主的动态语言相继诞生。<br />这使页面能够获取数据并不断更新，是前后端混合开发模式开端，所有的前端代码和前端数据都是后端生成的，随着后端代码的庞大和逻辑越来越复杂，相继的MVC发展起来。这时后端大多采用MVC模式开发，前端只是后端MVC中的V(视图)；<br />从web的诞生到2005，一直处在_<strong>后端重前端轻</strong>_的状态。</p>
@@ -72,7 +73,7 @@
 <p>随着 HTML5 小程序 的流行，前端再也不是人们眼中的小玩意了，应用功能开发逐步迁移到了前端，前端的代码逻辑逐渐变得复杂起来。<br />2010年10月Backbone MVP架构发布。<br />2010年10月Angular MVC-&gt;MVVM<br />2013年05月React开源 MVVM<br />2014年07月Vue MVVM</p>
 <p>随着这些 MV* 框架的出现，网页逐渐由 Web Site 演变成了 Web App，最终导致了复杂的单页应用（ Single Page Application）的出现。<br />随着 SPA 的兴起，2010年后，前端工程师从开发页面（切模板），逐渐变成了开发**“前端应用”**（跑在浏览器里面的应用程序）。</p>
 <p><a name="rMyAn"></a></p>
-<h3 id="javascript-开发app">javascript 开发App</h3>
+<h3 id="前端开发app阶段-至今">前端开发App阶段 至今</h3>
 <p>随着 iOS 和 Android 等智能手机的广泛使用，移动浏览器也逐步加强了对 HTML5 特性的支持力度。</p>
 <p>Web APP，即移动端的网站。一般泛指 SPA(Single Page Application)模式开发出的网站。将页面部署在服务器上，然后用户使用各大浏览器访问，不是独立APP，无法安装和发布。</p>
 <p>Hybrid App，即混合开发，也就是半原生半Web的开发模式，有跨平台效果，实质最终发布的仍然是独立的原生APP。</p>
