@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1560857853818">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1560858107332">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ducenand.github.io/">
-        <img src="https://ducenand.github.io//images/avatar.png?v=1560857853818" class="site-logo">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1560858107332" class="site-logo">
         <h1 class="site-title">似水流年</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -106,26 +106,37 @@
             <div class="post-date">2019-06-05</div>
             
             <div class="post-content">
-              <p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的<strong>静态模块打包工具</strong>。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
+              <h1 id="webpack是什么">Webpack是什么？</h1>
+<p><a name="GYNOz"></a></p>
+<h3 id="背景">背景</h3>
+<p>webpack的作者是德国纽伦堡<strong>Tobias Koppers</strong>,   webpack的诞生之初主要是想解决代码的拆分问题。这也是webpack这么受欢迎的原因所在。同时也离不开500多位开源贡献者。</p>
 <!-- more -->
+<p><a name="SoPw0"></a></p>
+<h3 id=""></h3>
+<p><a name="kHoc5"></a></p>
+<h3 id="解释">解释</h3>
+<p><strong>webpack</strong> 是一个现代 JavaScript 应用程序的**<em>静态模块打包工具</em>**。当 webpack 处理应用程序时，它会在内部构建一个 <a href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，此依赖图会映射项目所需的每个模块，并生成一个或多个 <em>bundle</em>。</p>
 <blockquote>
 <p>这是官方文档给出的webpack的解释，这里我提取几个关键词理解。</p>
 </blockquote>
-<p><a name="77HGd"></a></p>
-<h3 id="理解模块">理解模块</h3>
-<p>模块,又称<em>构件</em>,是能够单独命名并独立地完成一定功能的程序语句的集合（即程序代码和数据结构的集合体）。它具有两个基本的特征：外部特征和内部特征。外部特征是指模块跟外部环境联系的接口（即其他模块或程序调用该模块的方式，包括有输入输出参数、引用的全局变量）和模块的功能；内部特征是指模块的内部环境具有的特点（即该模块的局部数据和程序代码）。</p>
+<p><a name="PCMFp"></a></p>
+<h4 id="理解模块">理解模块</h4>
+<p>模块,又称构件,是能够单独命名并独立地完成一定功能的程序语句的集合（即程序代码和数据结构的集合体）。它具有两个基本的特征：外部特征和内部特征。外部特征是指模块跟外部环境联系的接口（即其他模块或程序调用该模块的方式，包括有输入输出参数、引用的全局变量）和模块的功能；内部特征是指模块的内部环境具有的特点（即该模块的局部数据和程序代码）。</p>
 <blockquote>
 <p>以上是百度百科给模块的定义，前端模块化一般指javascript的模块，最常见的模块就是npm包。每一个模块可能是最小甚至是最优的代码组合。</p>
 </blockquote>
 <br />
-<p><a name="t1VzK"></a></p>
-<h3 id="静态模块打包工具">静态模块打包工具</h3>
-<p>将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。</p>
-<p><a name="NAmIY"></a></p>
-<h3 id="依赖图dependency-graph">依赖图（dependency graph）</h3>
-<p>任何时候，一个文件依赖于另一个文件，webpack 就把此视为文件之间有<em>依赖关系</em>。webpack从命令行或配置文件定义的一个模块列表开始，处理你的应用程序；从入口开始webpack递归的构建一个依赖图，这个依赖图包含着应用程序中所需的每个模块，然后将这些模块打包成少量的bubdle,使浏览器可以执行。</p>
+<a name="d37Sj"></a>
+#### 静态模块打包工具
+将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。
+<p><a name="PGhKA"></a></p>
+<h4 id="依赖图dependency-graph">依赖图（dependency graph）</h4>
+<p>任何时候，一个文件依赖于另一个文件，webpack 就把此视为文件之间有_** 依赖关系**_。webpack从命令行或配置文件定义的一个模块列表开始，处理你的应用程序；从入口开始webpack递归的构建一个依赖图，这个依赖图包含着应用程序中所需的每个模块，然后将这些模块打包成少量的bubdle,使浏览器可以执行。</p>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1559734733970-08421dc5-5766-4871-919a-233c32b11b87.png#align=left&amp;display=inline&amp;height=455&amp;name=image.png&amp;originHeight=910&amp;originWidth=2030&amp;size=381464&amp;status=done&amp;width=1015" alt="image.png"></p>
-<p>通过上图能够简单理解，webpack就像一个黑盒子，通过这个黑盒子的模块（js、png、sass），将最终转化成浏览器可识别的文件。</p>
+<p>通过上图能够简单理解，webpack就像一个黑盒子，通过这个黑盒子的模块（js、ts、png、sass等），将最终转化成浏览器可识别的文件。</p>
+<p><a name="xHH6u"></a></p>
+<h3 id="webpack能做什么">Webpack能做什么？</h3>
+<p>代码转换、文件优化、代码分割、模块合并、自动刷新、代码校验、自动发布</p>
 <p>参考：<br />百度百科模块定义：<a href="https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198">https://baike.baidu.com/item/%E6%A8%A1%E5%9D%97/437198</a><br />官网给出的模块解释：<a href="https://webpack.docschina.org/concepts/modules/">https://webpack.docschina.org/concepts/modules/</a><br />官网依赖图解释：<a href="https://webpack.docschina.org/concepts/dependency-graph/">https://webpack.docschina.org/concepts/dependency-graph/</a></p>
 
             </div>
