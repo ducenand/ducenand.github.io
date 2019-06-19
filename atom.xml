@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-19T01:54:29.687Z</updated>
+    <updated>2019-06-19T07:02:46.431Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://ducenand.github.io//images/avatar.png</logo>
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
+    <entry>
+        <title type="html"><![CDATA[为什么选择Webpack?]]></title>
+        <id>https://ducenand.github.io//post/wei-shi-me-xuan-ze-webpack</id>
+        <link href="https://ducenand.github.io//post/wei-shi-me-xuan-ze-webpack">
+        </link>
+        <updated>2019-06-16T07:01:18.000Z</updated>
+        <content type="html"><![CDATA[<p><a name="RnUdT"></a></p>
+<h3 id="社区活跃生态丰富">社区活跃生态丰富</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560927596479-93e6acbd-f8e0-411a-8523-14481328651e.png#align=left&amp;display=inline&amp;height=195&amp;name=image.png&amp;originHeight=390&amp;originWidth=1456&amp;size=59222&amp;status=done&amp;width=728" alt="image.png">
+<a name="fbaoS"></a></p>
+<h3 id="官方迭代速度快维护好">官方迭代速度快维护好</h3>
+<ul>
+<li>6月10-6月17 一周的活跃情况</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560783492113-d2596562-7054-459d-bebf-3fa26eb33124.png#align=left&amp;display=inline&amp;height=596&amp;name=image.png&amp;originHeight=1192&amp;originWidth=1486&amp;size=192070&amp;status=done&amp;width=743" alt="image.png">
+<a name="jFFPd"></a></p>
+<h3 id="配置灵活和插件化扩展">配置灵活和插件化扩展</h3>
+<ul>
+<li>
+<p>配置很灵活对于不满足一些开发需要的，也是可以通过webpack插件机制进行扩展。定义自己的loader和plugin去满足自己团队个性化的需求。</p>
+</li>
+<li>
+<p>官方维护的loader和plugins很多</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560782685930-f7868512-fc3b-485f-95ba-b71743444970.png#align=left&amp;display=inline&amp;height=646&amp;name=image.png&amp;originHeight=1292&amp;originWidth=1710&amp;size=708432&amp;status=done&amp;width=855" alt="image.png"></p>
+<p>参考：<br /><a href="https://webpack.docschina.org/loaders/">官方维护的loader</a><br /><a href="https://webpack.docschina.org/plugins/">官方维护的plugins</a><br /><a href="https://github.com/webpack/webpack/pulse">webpack活跃度参考</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Webpack与Grunt、Gulp的区别？]]></title>
         <id>https://ducenand.github.io//post/webpack-yu-gruntgulp-de-qu-bie</id>
