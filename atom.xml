@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-19T01:50:09.644Z</updated>
+    <updated>2019-06-19T01:54:29.687Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -110,10 +110,9 @@
 <blockquote>
 <p>以上是百度百科给模块的定义，前端模块化一般指javascript的模块，最常见的模块就是npm包。每一个模块可能是最小甚至是最优的代码组合。</p>
 </blockquote>
-<br />
-<a name="d37Sj"></a>
-#### 静态模块打包工具
-将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。
+<p><a name="d37Sj"></a></p>
+<h4 id="静态模块打包工具">静态模块打包工具</h4>
+<p>将javascript代码、与其他静态文件组成的不同模块，进行分析、解析压缩打包成浏览器可识别的代码的过程。</p>
 <p><a name="PGhKA"></a></p>
 <h4 id="依赖图dependency-graph">依赖图（dependency graph）</h4>
 <p>任何时候，一个文件依赖于另一个文件，webpack 就把此视为文件之间有_** 依赖关系**_。webpack从命令行或配置文件定义的一个模块列表开始，处理你的应用程序；从入口开始webpack递归的构建一个依赖图，这个依赖图包含着应用程序中所需的每个模块，然后将这些模块打包成少量的bubdle,使浏览器可以执行。</p>
