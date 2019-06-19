@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-19T01:47:44.275Z</updated>
+    <updated>2019-06-19T01:50:09.644Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -51,11 +51,9 @@
         <link href="https://ducenand.github.io//post/qian-duan-li-shi-yan-bian">
         </link>
         <updated>2019-06-11T15:03:48.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="前端历史演变">前端历史演变</h1>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
+        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h1 id="前端历史演变">前端历史演变</h1>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
+        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560857646233-047e33e7-36ea-4825-88e6-eefee7b3a48a.png#align=left&amp;display=inline&amp;height=252&amp;name=image.png&amp;originHeight=504&amp;originWidth=1830&amp;size=40576&amp;status=done&amp;width=915" alt="image.png"><br />2014年初，我加入互联网开发行业，随没经历前端刀工火种的时态，5年的时间，前端技术的百家齐放很是眼花缭乱。我也从套页面后端工程师、jquery写效果到现在的小程序、node、vue转变成一个纯前端。现在回顾一下前端到底发生了哪些历史变化。</p>
 <!-- more -->
 <p><a name="9KSDm"></a></p>
 <h3 id="静态页面-1990~2005">静态页面 1990~2005</h3>
@@ -90,13 +88,11 @@
         <link href="https://ducenand.github.io//post/hello-webpack">
         </link>
         <updated>2019-06-05T12:17:35.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="webpack是什么">Webpack是什么？</h1>
-<p><a name="GYNOz"></a></p>
+        <summary type="html"><![CDATA[<p><a name="GYNOz"></a></p>
 <h3 id="背景">背景</h3>
 <p>webpack的作者是德国纽伦堡<strong>Tobias Koppers</strong>,   webpack的诞生之初主要是想解决代码的拆分问题。这也是webpack这么受欢迎的原因所在。同时也离不开500多位开源贡献者。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h1 id="webpack是什么">Webpack是什么？</h1>
-<p><a name="GYNOz"></a></p>
+        <content type="html"><![CDATA[<p><a name="GYNOz"></a></p>
 <h3 id="背景">背景</h3>
 <p>webpack的作者是德国纽伦堡<strong>Tobias Koppers</strong>,   webpack的诞生之初主要是想解决代码的拆分问题。这也是webpack这么受欢迎的原因所在。同时也离不开500多位开源贡献者。</p>
 <!-- more -->
