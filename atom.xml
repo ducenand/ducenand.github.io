@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-23T10:43:19.000Z</updated>
+    <updated>2019-06-25T13:21:12.881Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -10,6 +10,163 @@
     <logo>https://ducenand.github.io//images/avatar.png</logo>
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
+    <entry>
+        <title type="html"><![CDATA[前端模块化]]></title>
+        <id>https://ducenand.github.io//post/qian-duan-mo-kuai-hua</id>
+        <link href="https://ducenand.github.io//post/qian-duan-mo-kuai-hua">
+        </link>
+        <updated>2019-06-25T13:20:21.000Z</updated>
+        <summary type="html"><![CDATA[<p><a name="FHuyl"></a></p>
+<h3 id="解释">解释</h3>
+<p>前端模块化是将一个复杂的系统分解出多个模块，每个模块职责单一、相互独立、高度解耦并可替换。一般前端模块化指的是Javascript的模块。最常见的是Nodejs的NPM包。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><a name="FHuyl"></a></p>
+<h3 id="解释">解释</h3>
+<p>前端模块化是将一个复杂的系统分解出多个模块，每个模块职责单一、相互独立、高度解耦并可替换。一般前端模块化指的是Javascript的模块。最常见的是Nodejs的NPM包。</p>
+ <!-- more --> 
+<p>模块化开发的四点好处：</p>
+<ul>
+<li>避免变量污染，命名冲突</li>
+<li>提高代码复用率</li>
+<li>提高了可维护性</li>
+<li>方便依赖关系管理</li>
+</ul>
+<p>模块化也是组件化的基石，是构成现在色彩斑斓的前端世界的前提条件。</p>
+<p><a name="ZZHpF"></a></p>
+<h3 id="常见的模块化规范">常见的模块化规范</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561430794751-423088d7-9b4c-4b66-89ce-bb84b077ee81.png#align=left&amp;display=inline&amp;height=155&amp;name=image.png&amp;originHeight=310&amp;originWidth=1242&amp;size=69723&amp;status=done&amp;width=621" alt="image.png"><br />Javascript在早期的设计中就没有模块、包、类的概念，开发者需要模拟出类似的功能，来隔离、组织复杂的Javascript代码，我们称为模块化。有了模块化之后的代码，我们考虑更多的<strong>代码使用和维护成本</strong>问题，然后就有很多模块化的规范。常见的模块化规范有<strong>CommonJs、AMD、CMD、ES6 Module</strong>等规范。</p>
+<p><a name="Thbon"></a></p>
+<h4 id="commonjs">CommonJs</h4>
+<p>CommonJs是服务端模块化规范，Nodejs采用了这个规范并把它发扬光大。</p>
+<pre><code class="language-javascript">//example.js
+var n = 1;
+function sayHello( name ){
+    var name = name || &quot;Tom&quot;;
+    return &quot;Hello~&quot;+name
+}
+function addFn(val){
+    var val = val.x+val.y;
+    return val
+}
+module.exports ={
+    n:n,
+    sayHello:sayHello,
+    addFn:addFn
+}
+//main.js
+var example = require('./example.js');
+var addNum = {
+    &quot;x&quot;:10,
+    &quot;y&quot;:5
+}
+console.log( example )//查看example输出的对外模块接口；
+console.log( example.n )//1;
+console.log( example.sayHello(&quot;Jack&quot;) )// &quot;Hello~ Jack&quot;;
+console.log( example.addFn(addNum) ) //15;
+</code></pre>
+<p>CommonJS 加载模块是同步的，所以只有加载完成才能执行后面的操作。像Nodejs主要用于服务器的编程，加载的模块文件一般都已经存在本地硬盘，所以加载起来比较快，不用考虑异步加载的方式，所以CommonJS规范比较适用。但如果是<strong>浏览器环境</strong>，要从服务器加载模块，这是就必须采用异步模式。所以就有了 AMD CMD 解决方案。</p>
+<p><a name="h5mKU"></a></p>
+<h4 id="amdasynchromous-module-definition-异步模块定义">AMD（Asynchromous Module Definition） 异步模块定义</h4>
+<p>AMD 是客户端模块管理工具库<a href="https://www.zhihu.com/question/20351507/answer/14859415">RequireJS</a>提出并且完善的一套模块化规范，AMD 是基于异步加载模块的方式。<br />特点 ：异步加载，不阻塞页面的加载，能并行加载多个模块，但是不能按需加载，必须提前加载所需依赖</p>
+<pre><code class="language-javascript">// 用define 定义模块
+define({
+    method1: function() {},
+    method2: function() {},
+});
+// 定义模块时引用其他模块
+define(['module1', 'module2'], function(m1, m2) {
+   ...
+});
+// require 调用模块
+require(['foo', 'bar'], function ( foo, bar ) {
+        foo.doSomething();
+});
+</code></pre>
+<p><a name="3EfCA"></a></p>
+<h4 id="cmdcommon-module-definition通用模块定义">CMD（Common Module Definition）通用模块定义</h4>
+<p>CMD 是国内大牛玉伯提出来的，实现的库是<a href="http://seajs.github.io/seajs">SeaJs</a>.</p>
+<pre><code class="language-javascript">// test1.js
+define(function(require,exports,module){
+    ...
+    module.exports={
+        ...
+    }
+})
+
+// test2.js
+define(function(require,exports,module){    
+    var cmd = require('./test1') 
+    // cmd.xxx 依赖就近书写
+    // 通过 exports 对外提供接口
+    exports.doSomething = ...
+
+    // 或者通过 module.exports 提供整个接口
+    module.exports = ...
+})
+</code></pre>
+<p><a name="TYMGg"></a></p>
+<h4 id=""></h4>
+<p><a href="http://es6.ruanyifeng.com/#docs/module-loader#ES6-%E6%A8%A1%E5%9D%97%E4%B8%8E-CommonJS-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82"><strong>CMD与AMD的区别：</strong></a></p>
+<ol>
+<li>对于依赖的模块，AMD 是提前执行，CMD 是延迟执行。</li>
+<li>CMD 推崇依赖就近，AMD 推崇依赖前置。</li>
+</ol>
+<pre><code class="language-javascript">define(function(require, exports, module) {
+var a = require('./a')
+a.doSomething()
+// 此处略去 100 行
+var b = require('./b') // 依赖可以就近书写
+b.doSomething()
+// ...
+})
+// AMD 默认推荐的是
+define(['./a', './b'], function(a, b) {  // 依赖必须一开始就写好
+a.doSomething()
+// 此处略去 100 行
+b.doSomething()
+...
+})
+</code></pre>
+<p><a name="jg1At"></a></p>
+<h4 id="es6-module">ES6 Module</h4>
+<p>在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。<br />ES6 的模块自动采用严格模式，不管你有没有在模块头部加上<code>&quot;use strict&quot;</code>;并使用export、import 命令实现导出引用模块。</p>
+<pre><code class="language-javascript">// profile.js
+var firstName = 'Michael';
+var lastName = 'Jackson';
+var year = 1958;
+
+export { firstName, lastName, year };
+
+// main.js
+import { firstName, lastName, year } from './profile.js';
+
+function setName(element) {
+  element.textContent = firstName + ' ' + lastName;
+}
+//export default 命令
+
+// export-default.js
+export default function () {
+  console.log('foo');
+}
+// import-default.js
+import customName from './export-default';
+customName(); // 'foo'
+
+</code></pre>
+<p><strong>ES6 Module 与 CommonJS 的区别</strong></p>
+<ol>
+<li>CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。</li>
+<li>CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。</li>
+</ol>
+<p><a name="vQKAE"></a></p>
+<h3 id="区分模块与组件">区分模块与组件</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561301838681-54a17420-c175-49e6-a6fc-d3f1b1bc074f.png#align=left&amp;display=inline&amp;height=239&amp;name=image.png&amp;originHeight=409&amp;originWidth=630&amp;size=103461&amp;status=done&amp;width=368" alt="image.png"><br /><strong>前端模块</strong>侧重的功能的封装，主要是针对Javascript代码，隔离、组织复制的javascript代码，将它封装成一个个具有特定功能的的模块。<br />模块可以通过传递参数的不同修改这个功能的的相关配置，每个模块都是一个单独的作用域，根据需要调用。<br />一个模块的实现可以依赖其它模块。</p>
+<p><strong>前端组件</strong>更多关注的UI部分，页面的每个部件，比如头部，底部、内容区，弹出框都可以成为一个组件，每个组件有独立的HTML、CSS、JS代码。<br />可以根据需要把它放在页面的任意部位，也可以和其他组件一起形成新的组件。一个页面是各个组件的结合，可以根据需要进行组装。</p>
+<p><strong>扩展：站在业务的角度架构的视角模块组件又可以这么分。</strong><br />模块和组件都是系统的组成部分。<br />从逻辑角度拆分系统后，得到的单元就是“模块”。<br />从物理角度来拆分系统后，得到的单元就是“组件”。<br />划分模块的主要目的是职责分离，划分组件的主要目的是单元复用。<br />假设我们要做一个学生管理系统，这个系统从逻辑的角度拆分，可以分为“登录注册模块”“个人成绩模块”；从物理的角度来拆分，可以拆分为Nginx、Web服务器、MySql。</p>
+<p>参考：<br /><a href="https://blog.csdn.net/weixin_33913377/article/details/87954371">浅谈前端模块化</a><br /><a href="https://blog.csdn.net/qq_36709020/article/details/80056736">前端模块与组件的区别</a><br /><a href="https://www.cnblogs.com/best/p/10076782.html">30分钟学会前端模块化开发</a><br /><a href="https://www.cnblogs.com/chenzechuang/p/6559351.html">前端模块化、组件化的理解</a><br /><a href="https://www.zhihu.com/question/20351507/answer/14859415">知乎玉伯回复CMD和AMD的区别</a><br /><a href="">阮一峰ES6 Module 语法</a><br /><a href="">ES6 Module与CommonJs的差异化</a><br />从零开始学架构（李运华）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[探索与发现：第1期]]></title>
         <id>https://ducenand.github.io//post/tan-suo-yu-fa-xian-di-1-qi</id>
