@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-27T00:32:47.764Z</updated>
+    <updated>2019-06-27T00:39:27.115Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -16,16 +16,17 @@
         <link href="https://ducenand.github.io//post/yi-lai-nodejs">
         </link>
         <updated>2019-06-27T00:31:51.000Z</updated>
-        <summary type="html"><![CDATA[<p><a name="HjOpY"></a></p>
-<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"></h3>
-]]></summary>
-        <content type="html"><![CDATA[<p><a name="HjOpY"></a></p>
-<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"></h3>
-<!-- more -->
-<p><a name="mxMDY"></a></p>
+        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png">
+<a name="mxMDY"></a></p>
 <h3 id="背景">背景</h3>
-<p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。
-<a name="cutZq"></a></p>
+<p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png">
+<a name="mxMDY"></a></p>
+<h3 id="背景">背景</h3>
+<p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
+<!-- more -->
+<p><a name="cutZq"></a></p>
 <h3 id="简单了解nodejs">简单了解Nodejs</h3>
 <blockquote>
 <p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 
