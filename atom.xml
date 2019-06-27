@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-06-27T00:44:07.594Z</updated>
+    <updated>2019-06-27T00:48:56.655Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -25,7 +25,7 @@
 <a name="mxMDY"></a></p>
 <h3 id="背景">背景</h3>
 <p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
-<!-- more -->
+<!-- more --> 
 <p><a name="cutZq"></a></p>
 <h3 id="简单了解nodejs">简单了解Nodejs</h3>
 <blockquote>
@@ -41,15 +41,14 @@ Node.js 使用了一个<strong>事件驱动</strong>、<strong>非阻塞式 I/O<
 <p>Javascript 是一个静态脚本语言，运行时必须要借助于引擎才能运行。<br />Javascript 运行环境一般分为两种：</p>
 <ul>
 <li>浏览器运行环境 （ 通常我们写的js代码要在浏览器中才能运行）</li>
-<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）</li>
+<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）
+<a name="LSuE2"></a></li>
 </ul>
-<p><a name="LSuE2"></a></p>
 <h4 id="事件驱动">事件驱动</h4>
-<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。<br /></p>
-<p><a name="jBoeo"></a></p>
+<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。
+<a name="jBoeo"></a></p>
 <h4 id="非阻塞-io">非阻塞 I/O</h4>
-<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。</p>
-<p>**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
+<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br />**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
 <br />在Nodejs里面单线程可以通过回调函数（事件驱动）来做异步操作，达到非阻塞I/O的效果。</p>
 <p><a name="ROAQP"></a></p>
 <h3 id="安装nodejs">安装Nodejs</h3>
