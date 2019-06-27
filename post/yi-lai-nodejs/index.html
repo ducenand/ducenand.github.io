@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1561596534026">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1561631455444">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ducenand.github.io/">
-        <img src="https://ducenand.github.io//images/avatar.png?v=1561596534026" class="site-logo">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1561631455444" class="site-logo">
         <h1 class="site-title">似水流年</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -133,7 +133,9 @@ Node.js 使用了一个<strong>事件驱动</strong>、<strong>非阻塞式 I/O<
 <p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。
 <a name="jBoeo"></a></p>
 <h4 id="非阻塞-io">非阻塞 I/O</h4>
-<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br />**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
+<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />
+**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br />
+**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
 <br />在Nodejs里面单线程可以通过回调函数（事件驱动）来做异步操作，达到非阻塞I/O的效果。</p>
 <p><a name="ROAQP"></a></p>
 <h3 id="安装nodejs">安装Nodejs</h3>
