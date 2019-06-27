@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>依赖Nodejs | 似水流年</title>
+<meta name="description" content="一万年太久，只争朝夕！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1561595551456">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ducenand.github.io/">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1561595551456" class="site-logo">
+        <h1 class="site-title">似水流年</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ducenand" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一万年太久，只争朝夕！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/ducenand/ducenand.github.io" target="_blank"></a> | <a class="rss" href="https://ducenand.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">依赖Nodejs</h2>
+            <div class="post-date">2019-06-27</div>
+            
+            <div class="post-content">
+              <p><a name="HjOpY"></a></p>
+<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"></h3>
+<!-- more -->
+<p><a name="mxMDY"></a></p>
+<h3 id="背景">背景</h3>
+<p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。
+<a name="cutZq"></a></p>
+<h3 id="简单了解nodejs">简单了解Nodejs</h3>
+<blockquote>
+<p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 
+Node.js 使用了一个<strong>事件驱动</strong>、<strong>非阻塞式 I/O</strong> 的模型，使其轻量又高效。</p>
+</blockquote>
+<p>以上是官方给出的解释，惯例我们还是抽取关键词理解。
+<a name="fTNxv"></a></p>
+<h4 id="chrome-v8-引擎介绍">Chrome V8 引擎介绍</h4>
+<p>V8 引擎是Chrome于2008年9月2日发布开源。V8使用C++开发，相比其它的JavaScript的引擎转换成<a href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81">字节码</a>或<a href="https://baike.baidu.com/item/%E8%A7%A3%E9%87%8A%E6%89%A7%E8%A1%8C">解释执行</a>，V8将其编译成原生<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E7%A0%81">机器码</a>（<a href="https://baike.baidu.com/item/IA-32">IA-32</a>, <a href="https://baike.baidu.com/item/x86-64">x86-64</a>, <a href="https://baike.baidu.com/item/ARM/7518299">ARM</a>, or <a href="https://baike.baidu.com/item/MIPS">MIPS</a> CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的<strong>运行速度媲美二进制程序</strong>。<br />Chrome浏览器在Webkit渲染引擎中使用v8引擎来提高浏览器的渲染性能。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560989504270-19142662-a597-434f-bda5-9cf7fe586b73.png#align=left&amp;display=inline&amp;height=311&amp;name=image.png&amp;originHeight=622&amp;originWidth=1192&amp;size=302086&amp;status=done&amp;width=596" alt="image.png"><br />上图是webkit大致结构，红色部分是webkit的默认引擎，在谷歌系列产品中被替换为v8引擎；<br />Nodejs是站在“<strong>巨人的肩膀</strong>”上进行一系列的封装，它的高性能，离不开Chorme V8引擎。
+<a name="OOZYg"></a></p>
+<h4 id="javascript-运行环境">JavaScript 运行环境</h4>
+<p>Javascript 是一个静态脚本语言，运行时必须要借助于引擎才能运行。<br />Javascript 运行环境一般分为两种：</p>
+<ul>
+<li>浏览器运行环境 （ 通常我们写的js代码要在浏览器中才能运行）</li>
+<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）</li>
+</ul>
+<p><a name="LSuE2"></a></p>
+<h4 id="事件驱动">事件驱动</h4>
+<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。<br /></p>
+<p><a name="jBoeo"></a></p>
+<h4 id="非阻塞-io">非阻塞 I/O</h4>
+<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。</p>
+<p>**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
+<br />在Nodejs里面单线程可以通过回调函数（事件驱动）来做异步操作，达到非阻塞I/O的效果。</p>
+<p><a name="ROAQP"></a></p>
+<h3 id="安装nodejs">安装Nodejs</h3>
+<ul>
+<li>可以在官网自行选择安装包<a href="http://nodejs.cn/download/">下载</a></li>
+<li>MacOS用户建议使用<a href="https://brew.sh/">brew</a>安装</li>
+</ul>
+<pre><code class="language-bash">#安装
+brew install -g node
+#卸载
+brew uninstall nodejs
+</code></pre>
+<ul>
+<li>使用<a href="https://github.com/nvm-sh/nvm">nvm</a>安装管理Nodejs版本</li>
+</ul>
+<pre><code class="language-bash">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# or
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# 放入环境变量
+source ~/.bash_profile
+# 判断是否安装成功
+nvm list
+# 安装node
+nvm install 6.14.4 # or 10.10.0, 8.9.1, etc
+# 判断node安装成功
+node -v
+npm -v
+
+</code></pre>
+<p><a name="ec5SJ"></a></p>
+<h3 id="nodejs-的简单使用">Nodejs 的简单使用</h3>
+<p><a name="jftAl"></a></p>
+<h4 id="模块化规范-commonjs">模块化规范 CommonJs</h4>
+<p>在<a href="https://ducenand.github.io/post/qian-duan-mo-kuai-hua/">前端模块化</a>中已经对CommonJs做了介绍，并使用exports导出模块，require引入模块，实现了一个简单案例。</p>
+<ul>
+<li>require:引入一个模块</li>
+<li>exports: 导出模块内容</li>
+<li>module: 模块本身
+<a name="34sz0"></a></li>
+</ul>
+<h4 id="使用nodejs创建服务">使用Nodejs创建服务</h4>
+<pre><code class="language-javascript">// index.js
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+</code></pre>
+<p>运行 <code>node index.js</code> 会起一个去 <code>127.0.0.1:3000</code> 的服务，并在浏览器中输出<code>Hello world</code><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561560892621-cd119fbb-e53c-465b-9fb9-7d9c4e3a7238.png#align=left&amp;display=inline&amp;height=110&amp;name=image.png&amp;originHeight=220&amp;originWidth=480&amp;size=18190&amp;status=done&amp;width=240" alt="image.png">
+<a name="nbTh4"></a></p>
+<h4 id="了解基础api">了解基础API</h4>
+<p><code>path</code> 模块提供用于处理文件路径和目录路径的实用工具。</p>
+<pre><code class="language-javascript">// 引用
+const path = require('path');
+path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
+// 返回: '/foo/bar/baz/asdf'
+
+// path.resolve() 方法将路径或路径片段的序列解析为绝对路径
+path.resolve('/foo/bar', './baz');
+// 返回: '/foo/bar/baz'
+</code></pre>
+<p><code>fs</code>文件系统模块，对文件和目录进行读写操作。</p>
+<pre><code class="language-javascript">// 引用
+const fs = require('fs');
+// 读取文件
+fs.readFile('./test.txt', function(err, data) {
+    if (err) {
+        throw err;
+    }
+    console.log(data);
+});
+// 写入文件
+fs.writeFile('input.txt', '我是新写入的内容', function (err) {
+   if (err) console.error(err);
+   console.log('数据写入的数据');
+ });
+// 删除
+fs.unlink('/tmp/hello', (err) =&gt; {
+  if (err) throw err;
+  console.log('已成功删除 /tmp/hello');
+});
+// 重命名
+fs.rename('/tmp/hello', '/tmp/world', (err) =&gt; {
+  if (err) throw err;
+  console.log('重命名完成');
+});
+</code></pre>
+<p>更多<code>Api</code>参考<a href="http://nodejs.cn/api/">Nodejs Api</a> 官网。</p>
+<p>参考：<br /><a href="https://blog.csdn.net/heyeqingquan/article/details/78839699">Chrome V8 引擎介绍</a><br /><a href="https://baike.baidu.com/item/V8/6178125">百度百科V8介绍</a><br /><a href="https://nodejs.org/zh-cn/docs/guides/">Nodejs官网指南</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://ducenand.github.io//tag/iBPETJGsr" class="tag">
+                    NodeJs
+                  </a>
+                
+                  <a href="https://ducenand.github.io//tag/jKVQmMbTZ" class="tag">
+                    webpack
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ducenand.github.io//post/qian-duan-mo-kuai-hua">
+                  <h3 class="post-title">
+                    前端模块化
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd16f83efa60cf99e37fa',
+        clientSecret: 'd8e9ff4f182f14ad688436e5ef8dafb24d9417d1',
+        repo: 'ducenand.github.io',
+        owner: 'ducenand',
+        admin: ['ducenand'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

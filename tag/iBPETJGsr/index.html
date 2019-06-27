@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 似水流年</title>
+<title>NodeJs | 似水流年</title>
 <meta name="description" content="一万年太久，只争朝夕！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,12 +13,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -101,29 +95,30 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
-            
-              <div class="feature-container" style="background-image: url('https://ducenand.github.io//post-images/about.jpg')">
+          <h2 class="current-tag">标签: NodeJs</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ducenand.github.io//post/yi-lai-nodejs">
+                  <h2 class="post-title">依赖Nodejs</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-27
+                </div>
+                <div class="post-abstract">
+                  <p><a name="HjOpY"></a></p>
+<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"></h3>
+
+                </div>
               </div>
-            
-            <div class="post-content">
-              <h2 id="简单的博客">简单的博客</h2>
-
-            </div>
-            
-            
-
-            
               
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
+            </article>
+          
 
-              
-            
-
-          </div>
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
       </div>
@@ -145,29 +140,6 @@ var app = new Vue({
 })
 
 </script>
-
-
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-
-      var gitalk = new Gitalk({
-        clientID: 'd16f83efa60cf99e37fa',
-        clientSecret: 'd8e9ff4f182f14ad688436e5ef8dafb24d9417d1',
-        repo: 'ducenand.github.io',
-        owner: 'ducenand',
-        admin: ['ducenand'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
 
 
 
