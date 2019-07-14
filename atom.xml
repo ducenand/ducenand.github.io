@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-07-14T08:42:19.860Z</updated>
+    <updated>2019-07-14T08:46:22.129Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -64,13 +64,13 @@ alias: i,add
 common options: [-S|--save|-D|--save-dev|-O|--save-optional] [-E|--save-exact][--no-save][-B|--save-bundle][--dry-run]
 </code></pre>
 <p><strong>其中：</strong><br />-S与--save 安装到dependenices生产环境中,对应<code>package.json</code>中的<code>dependencies</code></p>
-<pre><code class="language-json">//npm i -S ecpress || npm install --save express
+<pre><code class="language-json">//npm i -S express || npm install --save express
 &quot;dependencies&quot;: {
     &quot;express&quot;: &quot;^4.17.1&quot;,
 }
 </code></pre>
 <p>-D与--save-dev 安装到devDependenices开发环境中,对应<code>package.json</code>中的<code>devDependencies</code></p>
-<pre><code class="language-json">//npm i -D ecpress || npm install --save-dev express
+<pre><code class="language-json">//npm i -D express || npm install --save-dev express
 &quot;devDependencies&quot;: {
     &quot;express&quot;: &quot;^4.17.1&quot;
  }
