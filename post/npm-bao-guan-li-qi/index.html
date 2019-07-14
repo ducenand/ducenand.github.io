@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>NPM包管理器 | 似水流年</title>
+<meta name="description" content="一万年太久，只争朝夕！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1563093511411">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062200-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143062200-1');
+</script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ducenand.github.io/">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1563093511411" class="site-logo">
+        <h1 class="site-title">似水流年</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ducenand" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一万年太久，只争朝夕！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/ducenand/ducenand.github.io" target="_blank"></a> | <a class="rss" href="https://ducenand.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">NPM包管理器</h2>
+            <div class="post-date">2019-07-14</div>
+            
+            <div class="post-content">
+              <h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562050872655-a4811ea7-9871-4372-9474-60421c035527.png#align=left&amp;display=inline&amp;height=385&amp;name=image.png&amp;originHeight=770&amp;originWidth=1428&amp;size=69197&amp;status=done&amp;width=714" alt="image.png"></h3>
+<!-- more -->
+<p><a name="kQu9L"></a></p>
+<h3 id="npm安装和定义">NPM安装和定义</h3>
+<blockquote>
+<p><strong>NPM</strong>（全称 Node Package Manager，即“node包管理器”）是Node.js默认的、以JavaScript编写的<strong>软件包管理系统</strong>。</p>
+</blockquote>
+<p>以上是维基百科给NPM的定义。理解软件包管理系统。<br /><strong>软件包管理系统</strong>是在计算机中自动安装、配制、卸载和升级软件包的工具组合，在各种系统软件和应用软件的安装管理中均有广泛应用。<br />比如：PHP中composer、JAVA中maven、LIUNX系统中的yum</p>
+<p>NPM软件包管理系统由3部分组成：</p>
+<ul>
+<li><strong>网站</strong></li>
+</ul>
+<p>可以通过<a href="https://www.npmjs.com/">https://www.npmjs.com</a>网站,搜索包、管理自己的包和个人信息。</p>
+<ul>
+<li><strong>注册表（registry）</strong></li>
+</ul>
+<p>一个巨大的数据库，保存着每个包（package）的信息。</p>
+<ul>
+<li><strong>命令行工具 (CLI)</strong></li>
+</ul>
+<p>通过命令行和终端运行，开发者通过CLI与NPM打交道。<br />
+<br /><strong>在安装Node.js时会默认安装NPM包管理器</strong>，NPM完全由Javascript写成，和模块没啥区别，所以我们可以<code>npm install -g npm</code> 更新安装自己。</p>
+<p>随着前端工程化、模块化的快速发展，前端开发已经离不开npm包管理器了。在我们使用前端各大框架Vue、React、Angluar时，我们只需要<code>npm install [package name]</code>就可以安装使用我们需要的模块包，非常便捷高效。</p>
+<p>通过下图我们就能看出npm之火爆。总包量<strong>100多万</strong>，周下载量<strong>114亿</strong>。来自各大洲的开源软件开发者都在使用npm借鉴学习或者分享。同时也是Node.js获得成功重要原因之一。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562048207944-8e13b476-0e68-40f7-8b75-2db48a93ad3a.png#align=left&amp;display=inline&amp;height=281&amp;name=image.png&amp;originHeight=562&amp;originWidth=680&amp;size=41349&amp;status=done&amp;width=340" alt="image.png">
+<a name="nDQ9W"></a></p>
+<h3 id="npm命令以及使用">NPM命令以及使用</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561983337245-ad4b5fe6-37e5-4e14-ad3f-1bb27a64813a.png#align=left&amp;display=inline&amp;height=267&amp;name=image.png&amp;originHeight=534&amp;originWidth=1592&amp;size=101353&amp;status=done&amp;width=796" alt="image.png"></p>
+<p>以上图片罗列出NPM所有的命令，捡几个常用的命令学习；
+<a name="Cs98I"></a></p>
+<h4 id="npm-install-安装模块">npm install 安装模块</h4>
+<p>安装形式：</p>
+<pre><code class="language-bash">npm install (with no args, in package dir)
+npm install [&lt;@scope&gt;/]&lt;pkg&gt;
+npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;tag&gt;
+npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version&gt;
+npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version range&gt;
+npm install &lt;folder&gt;
+npm install &lt;tarball file&gt;
+npm install &lt;tarball url&gt;
+npm install &lt;git:// url&gt;
+npm install &lt;github username&gt;/&lt;github project&gt;
+
+alias: i,add
+common options: [-S|--save|-D|--save-dev|-O|--save-optional] [-E|--save-exact][--no-save][-B|--save-bundle][--dry-run]
+</code></pre>
+<p><strong>其中：</strong><br />-S与--save 安装到dependenices生产环境中,对应<code>package.json</code>中的<code>dependencies</code></p>
+<pre><code class="language-json">//npm i -S ecpress || npm install --save express
+&quot;dependencies&quot;: {
+    &quot;express&quot;: &quot;^4.17.1&quot;,
+}
+</code></pre>
+<p>-D与--save-dev 安装到devDependenices开发环境中,对应<code>package.json</code>中的<code>devDependencies</code></p>
+<pre><code class="language-json">//npm i -D ecpress || npm install --save-dev express
+&quot;devDependencies&quot;: {
+    &quot;express&quot;: &quot;^4.17.1&quot;
+ }
+</code></pre>
+<p>-O与--save-optional 安装加入到可选阶段依赖对应<code>package.json</code>中的<code>optionalDependencies</code></p>
+<pre><code class="language-json">// npm i -O vue || npm install --save-optional
+&quot;optionalDependenices&quot;:{
+	&quot;vue&quot;: &quot;^2.5.2&quot;
+}
+</code></pre>
+<p>-E与--save-exact 精准安装指定模块版本对应<code>package.json</code>中的<code>dependenicies</code>不会是兼容的模式展示<code>^</code></p>
+<pre><code class="language-json">// npm i -E vue || npm install --save-exact 注意没有^
+&quot;dependenices&quot;:{
+	&quot;vue&quot;: &quot;2.5.2&quot;
+}
+</code></pre>
+<p>--no-save 防止保存到依赖项</p>
+<p>-B与--save-bundle 保存的依赖项也将添加到您的<code>bundleDependencies</code>列表中。</p>
+<pre><code class="language-json">&quot;dependenices&quot;:{
+	&quot;vue&quot;:&quot;^2.5.2&quot;
+},
+&quot;bundleDependencies&quot;:[&quot;vue&quot;]
+</code></pre>
+<p>--dry-run 只在命令行可以看到有安装的操作,实际没有安装任何内容到<code>node_modules</code>和<code>package.json</code>中</p>
+<p><strong>本地安装</strong></p>
+<pre><code class="language-bash">npm i vue
+</code></pre>
+<p><strong>全局安装</strong></p>
+<pre><code class="language-bash">npm i -g vue || npm install --global vue
+</code></pre>
+<p><strong>即使本地已经下载，强制从远程下载安装</strong></p>
+<pre><code class="language-bash">npm i -f vue || npm install --force vue
+</code></pre>
+<p><a name="xbCM2"></a></p>
+<h4 id="npm-uninstall-卸载模块">npm uninstall 卸载模块</h4>
+<pre><code class="language-bash">npm uninstall [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]... [-S|--save-prod][-D|--save-dev][-O|--save-optional] [--no-save]
+
+aliases: un, unlink, remove, rm, r
+</code></pre>
+<pre><code class="language-bash">npm uninstall -g vue //卸载全局包
+npm uninstall vue // 卸载本地包
+</code></pre>
+<p><a name="DPvz8"></a></p>
+<h4 id="npm-search-搜索模块">npm search 搜索模块</h4>
+<pre><code class="language-json">npm search [-l|--long] [--json] [--parseable] [--no-description] [search terms ...]
+
+aliases: s, se, find
+</code></pre>
+<p><a name="2s6we"></a></p>
+<h4 id="npm-update-更新模块">npm update 更新模块</h4>
+<pre><code class="language-bash">npm update [-g] [&lt;pkg&gt;...]
+
+aliases: up, upgrade, udpate
+</code></pre>
+<p><a name="c01XS"></a></p>
+<h4 id="npm-outdated-检查模块是否过时">npm outdated 检查模块是否过时</h4>
+<pre><code class="language-bash">npm outdated [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
+</code></pre>
+<p><a name="Zf9i1"></a></p>
+<h4 id="npm-ls-查看安装模块">npm ls 查看安装模块</h4>
+<pre><code class="language-bash">npm ls [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
+
+aliases: list, la, ll
+</code></pre>
+<p><a name="FUPs3"></a></p>
+<h4 id="npm-init-初始化-生成packagejson文件">npm init 初始化 生成package.json文件</h4>
+<pre><code class="language-bash">npm init [--force|-f|--yes|-y|--scope]
+npm init &lt;@scope&gt; (same as `npx &lt;@scope&gt;/create`)
+npm init [&lt;@scope&gt;/]&lt;name&gt; (same as `npx [&lt;@scope&gt;/]create-&lt;name&gt;`)
+</code></pre>
+<p>默认init 跳过提示步骤</p>
+<pre><code class="language-bash">npm init -y || npm init -yes
+</code></pre>
+<p>安装react应用到my-react-app目录下</p>
+<pre><code class="language-bash">npm init react-app ./my-react-app
+</code></pre>
+<p>init 转成npx对应操作</p>
+<pre><code class="language-bash">npm init foo -&gt; npx create-foo
+npm init @usr/foo -&gt; npx @usr/create-foo
+npm init @usr -&gt; npx @usr/create
+</code></pre>
+<p><a name="tuxaL"></a></p>
+<h4 id="npm-help-term-npm-command-h查看命令帮助">npm help <term> || npm <command> -h查看命令帮助</h4>
+<pre><code class="language-bash">npm help install
+npm help init
+npm install -h || npm install --help
+</code></pre>
+<p><a name="pkZf5"></a></p>
+<h4 id="npm-root-查看包安装路径">npm root 查看包安装路径</h4>
+<pre><code class="language-bash">npm root
+# 查看全局安装路径
+npm root -g
+</code></pre>
+<p><a name="xKcxP"></a></p>
+<h4 id="npm-config-管理npm配置项">npm config 管理npm配置项</h4>
+<pre><code class="language-bash">npm config set &lt;key&gt; &lt;value&gt; [-g|--global]
+npm config get &lt;key&gt;
+npm config delete &lt;key&gt;
+npm config list [-l] [--json]
+npm config edit
+npm get &lt;key&gt;
+npm set &lt;key&gt; &lt;value&gt; [-g|--global]
+
+aliases: c
+</code></pre>
+<p>基本配置</p>
+<pre><code class="language-bash">npm config list
+; cli configs
+metrics-registry = &quot;https://registry.npmjs.org/&quot;
+scope = &quot;&quot;
+user-agent = &quot;npm/6.4.1 node/v10.15.3 darwin x64&quot;
+
+; userconfig /Users/ducen/.npmrc
+//registry.npm.taobao.org/:always-auth = false
+init.author.email = &quot;123@.qq.com&quot;
+registry = &quot;https://registry.npmjs.org/&quot;
+
+; node bin location = /usr/local/bin/node
+; cwd = /Users/ducen/Learn/npm
+; HOME = /Users/ducen
+; &quot;npm config ls -l&quot; to show all defaults.
+</code></pre>
+<p><a name="ICBAk"></a></p>
+<h4 id="npm-cache-管理模块缓存">npm cache 管理模块缓存</h4>
+<pre><code class="language-bash">npm cache add &lt;tarball file&gt;
+npm cache add &lt;folder&gt;
+npm cache add &lt;tarball url&gt;
+npm cache add &lt;name&gt;@&lt;version&gt;
+npm cache clean [&lt;path&gt;]
+
+aliases: npm cache clear, npm cache rm
+
+npm cache verify
+</code></pre>
+<p>默认缓存位置mac<code>~/.npm</code> window <code>%AppData%/npm-cache</code><br />最常用的是清除本地缓存</p>
+<pre><code class="language-bash">npm cache clean
+</code></pre>
+<p><a name="Eo7NX"></a></p>
+<h4 id="npm-version-查看模块版本">npm version 查看模块版本</h4>
+<pre><code class="language-bash">npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=&lt;prerelease-id&gt;] | from-git]
+</code></pre>
+<pre><code class="language-json">npm version
+{ npm: '6.4.1',
+  ares: '1.15.0',
+  cldr: '33.1',
+  http_parser: '2.8.0',
+  icu: '62.1',
+  modules: '64',
+  napi: '3',
+  nghttp2: '1.34.0',
+  node: '10.15.3',
+  openssl: '1.1.0j',
+  tz: '2018e',
+  unicode: '11.0',
+  uv: '1.23.2',
+  v8: '6.8.275.32-node.51',
+  zlib: '1.2.11' 
+}
+</code></pre>
+<p><a name="ruWjd"></a></p>
+<h4 id="npm-view-查看模块注册信息">npm view 查看模块注册信息</h4>
+<pre><code class="language-json">npm view [&lt;@scope&gt;/]&lt;name&gt;[@&lt;version&gt;] [&lt;field&gt;[.&lt;subfield&gt;]...]
+aliases: info, show, v
+</code></pre>
+<pre><code class="language-bash">npm view vue
+vue@2.6.10 | MIT | deps: none | versions: 250
+Reactive, component-oriented view layer for modern web interfaces.
+https://github.com/vuejs/vue#readme
+
+keywords: vue
+
+dist
+.tarball: https://registry.npmjs.org/vue/-/vue-2.6.10.tgz
+.shasum: a72b1a42a4d82a721ea438d1b6bf55e66195c637
+.integrity: sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+.unpackedSize: 3.0 MB
+
+maintainers:
+- yyx990803 &lt;yyx990803@gmail.com&gt;
+
+dist-tags:
+beta: 2.6.0-beta.3  csp: 1.0.28-csp     latest: 2.6.10
+
+published 3 months ago by yyx990803 &lt;yyx990803@gmail.com&gt;
+</code></pre>
+<p>npm view <pkg> dependencies查看模块的依赖关系</p>
+<pre><code class="language-bash">npm view express dependecies
+{ 
+	accepts: '~1.3.7',
+  'array-flatten': '1.1.1',
+  'body-parser': '1.19.0',
+  'content-disposition': '0.5.3',
+  'content-type': '~1.0.4',
+  cookie: '0.4.0',
+  'cookie-signature': '1.0.6',
+  debug: '2.6.9',
+  depd: '~1.1.2',
+  encodeurl: '~1.0.2',
+  'escape-html': '~1.0.3',
+  etag: '~1.8.1',
+  finalhandler: '~1.1.2',
+  fresh: '0.5.2',
+  'merge-descriptors': '1.0.1',
+  methods: '~1.1.2',
+  'on-finished': '~2.3.0',
+  parseurl: '~1.3.3',
+  'path-to-regexp': '0.1.7',
+  'proxy-addr': '~2.0.5',
+  qs: '6.7.0',
+  'range-parser': '~1.2.1',
+  'safe-buffer': '5.1.2',
+  send: '0.17.1',
+  'serve-static': '1.14.1',
+  setprototypeof: '1.1.1',
+  statuses: '~1.5.0',
+  'type-is': '~1.6.18',
+  'utils-merge': '1.0.1',
+  vary: '~1.1.2' 
+  }
+</code></pre>
+<p>npm view <pkg> repository.url 查看源文件地址</p>
+<pre><code class="language-bash">npm view qs repository.url
+git+https://github.com/ljharb/qs.git
+</code></pre>
+<p>npm view <pkg> contributors 查看模块的贡献值</p>
+<pre><code class="language-bash">npm view express contributors
+[ 'Aaron Heckmann &lt;aaron.heckmann+github@gmail.com&gt;',
+  'Ciaran Jessup &lt;ciaranj@gmail.com&gt;',
+  'Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;',
+  'Guillermo Rauch &lt;rauchg@gmail.com&gt;',
+  'Jonathan Ong &lt;me@jongleberry.com&gt;',
+  'Roman Shtylman &lt;shtylman+expressjs@gmail.com&gt;',
+  'Young Jae Sim &lt;hanul@hanul.me&gt;' ]
+
+</code></pre>
+<p><a name="6runY"></a></p>
+<h4 id="npm-adduser-用户登录">npm adduser 用户登录</h4>
+<pre><code class="language-bash">npm adduser [--registry=url] [--scope=@orgname] [--always-auth] [--auth-type=legacy]
+
+aliases: login, add-user
+</code></pre>
+<pre><code class="language-bash">npm adduser
+Username: alan-du
+Password:
+Email: (this IS public) 316358726@qq.com
+Logged in as alan-du on https://registry.npmjs.org/.
+</code></pre>
+<p>用户登录后，可以向npm发送包。
+<a name="3YghP"></a></p>
+<h4 id="npm-publish-发布模块">npm publish 发布模块</h4>
+<pre><code class="language-bash">npm publish [&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;] [--otp otpcode] [--dry-run]
+
+Publishes '.' if no argument supplied
+Sets tag 'latest' if no --tag specified
+</code></pre>
+<p>简单发一个包</p>
+<pre><code class="language-bash">#1
+mkdir alan-npm-test
+#2
+cd alan-npm-test
+#3
+npm init -y
+#4
+touch index.js
+#5
+echo &quot;function(){console.log('这是发布的测试包')}()&quot;&gt;index.js
+#6
+npm adduser
+Username: alan-du
+Password:
+Email: (this IS public) 316358726@qq.com
+Logged in as alan-du on https://registry.npmjs.org/.
+#7
+npm publish
+npm notice
+npm notice 📦  alan-npm-test@1.0.0
+npm notice === Tarball Contents ===
+npm notice 227B package.json
+npm notice 58B  index.js
+npm notice === Tarball Details ===
+npm notice name:          alan-npm-test
+npm notice version:       1.0.0
+npm notice package size:  353 B
+npm notice unpacked size: 285 B
+npm notice shasum:        4c84a14ed93f4e1e6d2a603da3e70868f71035e4
+npm notice integrity:     sha512-IgzS/4dB/vFVD[...]lzv4Fq4Pw2rnA==
+npm notice total files:   2
+npm notice
++ alan-npm-test@1.0.0
+</code></pre>
+<p><a name="buRe8"></a></p>
+<h4 id="npm-dist-tag-添加删除查看tag">npm dist-tag 添加删除查看tag</h4>
+<pre><code class="language-bash">npm dist-tag add &lt;pkg&gt;@&lt;version&gt; [&lt;tag&gt;]
+npm dist-tag rm &lt;pkg&gt; &lt;tag&gt;
+npm dist-tag ls [&lt;pkg&gt;]
+
+aliases: dist-tags
+</code></pre>
+<pre><code class="language-bash">#1
+npm dist-tag ls
+alan-npm-test@1.0.2-0: 1.0.2-0
+latest: 1.0.3-1
+npm-test@1.0.5: 1.0.5
+#2
+npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
+-alan-npm-test@1.0.2-0: alan-npm-test@1.0.2-0
+</code></pre>
+<p><a name="bEqh7"></a></p>
+<h4 id="npm-deprecate-弃用包">npm deprecate 弃用包</h4>
+<pre><code class="language-json">npm deprecate &lt;pkg&gt;[@&lt;version&gt;] &lt;message&gt;
+</code></pre>
+<pre><code class="language-json">npm deprecate alan-npm-test@1.0.3-1 &quot;this package has been deprecated&quot;
+</code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563087590391-a8f89a49-051e-4a1e-9fc5-5d5e5e610d05.png#align=left&amp;display=inline&amp;height=94&amp;name=image.png&amp;originHeight=188&amp;originWidth=1128&amp;size=20537&amp;status=done&amp;width=564" alt="image.png"><br /><code>&lt;message&gt;</code>不能为汉字等特殊字符</p>
+<p><a name="DLOM4"></a></p>
+<h4 id="npm-unpublish撤销发布的包">npm unpublish撤销发布的包</h4>
+<p>删除某个版本</p>
+<pre><code class="language-json">npm unpublish alan-npm-test@1.0.5 
+</code></pre>
+<p>删除整个npm市场的包</p>
+<pre><code class="language-json">npm unpublish alan-npm-test --force 
+</code></pre>
+<p>24小时内你可以删除自己发布的库，并且没有被下载，之后你就再也不能删除了。</p>
+<p>package.json 介绍</p>
+<pre><code class="language-json">
+{
+  &quot;name&quot;: &quot;express&quot;,
+  &quot;description&quot;: &quot;Fast, unopinionated, minimalist web framework&quot;,
+  &quot;version&quot;: &quot;4.17.1&quot;,
+  &quot;author&quot;: &quot;TJ Holowaychuk &lt;tj@vision-media.ca&gt;&quot;,
+  &quot;contributors&quot;: [
+    &quot;Aaron Heckmann &lt;aaron.heckmann+github@gmail.com&gt;&quot;,
+    &quot;Ciaran Jessup &lt;ciaranj@gmail.com&gt;&quot;,
+    &quot;Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;&quot;,
+    &quot;Guillermo Rauch &lt;rauchg@gmail.com&gt;&quot;,
+    &quot;Jonathan Ong &lt;me@jongleberry.com&gt;&quot;,
+    &quot;Roman Shtylman &lt;shtylman+expressjs@gmail.com&gt;&quot;,
+    &quot;Young Jae Sim &lt;hanul@hanul.me&gt;&quot;
+  ],
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;repository&quot;: &quot;expressjs/express&quot;,
+  &quot;homepage&quot;: &quot;http://expressjs.com/&quot;,
+  &quot;keywords&quot;: [
+    &quot;express&quot;,
+    &quot;framework&quot;,
+    &quot;sinatra&quot;,
+    &quot;web&quot;,
+    &quot;rest&quot;,
+    &quot;restful&quot;,
+    &quot;router&quot;,
+    &quot;app&quot;,
+    &quot;api&quot;
+  ],
+  &quot;dependencies&quot;: {
+    &quot;accepts&quot;: &quot;~1.3.7&quot;,
+    &quot;array-flatten&quot;: &quot;1.1.1&quot;,
+ 		...
+  },
+  &quot;devDependencies&quot;: {
+    &quot;after&quot;: &quot;0.8.2&quot;,
+    &quot;connect-redis&quot;: &quot;3.4.1&quot;,
+   	...
+  },
+  &quot;engines&quot;: {
+    &quot;node&quot;: &quot;&gt;= 0.10.0&quot;
+  },
+  &quot;files&quot;: [
+    &quot;LICENSE&quot;,
+    &quot;History.md&quot;,
+    &quot;Readme.md&quot;,
+    &quot;index.js&quot;,
+    &quot;lib/&quot;
+  ],
+  &quot;scripts&quot;: {
+    &quot;lint&quot;: &quot;eslint .&quot;,
+    &quot;test&quot;: &quot;mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/&quot;,
+    &quot;test-ci&quot;: &quot;istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/&quot;,
+    &quot;test-cov&quot;: &quot;istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/&quot;,
+    &quot;test-tap&quot;: &quot;mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/&quot;
+  }
+}
+</code></pre>
+<p><a name="qKeJh"></a></p>
+<h4 id="name">name</h4>
+<p>在package.json中最重要的就是name和version字段。他们都是必须的，如果没有就无法install。name和version一起组成的标识在假设中是唯一的。改变包应该同时改变version。
+<a name="Tpyw6"></a></p>
+<h4 id="version">version</h4>
+<p>version必须能被<a href="https://github.com/isaacs/node-semver">node-semver</a>解析，它被包在npm的依赖中。（要自己用可以执行<code>npm install semver</code>）<br />可用的“数字”或者“范围”见下文<strong>语义化版本控制范围SemVer</strong>.
+<a name="lk9iR"></a></p>
+<h4 id="description">description</h4>
+<p>放简介，字符串，方便在<code>npm search</code>中搜索
+<a name="ANz7c"></a></p>
+<h4 id="keywords">keywords</h4>
+<p>关键字，数组、字符串，方便在<code>npm search</code>中搜索
+<a name="qFi4h"></a></p>
+<h4 id="bugs">bugs</h4>
+<p>项目提交问题的url和（或）邮件地址</p>
+<pre><code class="language-json">&quot;bugs&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vuejs/vue/issues&quot;
+ }
+</code></pre>
+<p><a name="JJOSZ"></a></p>
+<h4 id="license">license</h4>
+<p>指定一个许可证，让人知道使用的权利和限制的。<br />最简单的方法是，假如你用一个像BSD或者MIT这样通用的许可证，就只需要指定一个许可证的名字，像这样：</p>
+<pre><code class="language-json">&quot;license&quot;: &quot;MIT&quot;,
+</code></pre>
+<p>如果你又更复杂的许可条件，或者想要提供给更多地细节，可以这样:</p>
+<pre><code class="language-json">&quot;licenses&quot; : [
+  { 
+   &quot;type&quot; : &quot;MyLicense&quot;, 
+   &quot;url&quot; : &quot;http://github.com/owner/project/path/to/license&quot;
+  }
+]
+</code></pre>
+<p><a name="jlsp4"></a></p>
+<h4 id="repository">repository</h4>
+<p>指定你的代码存放的地方。这个对希望贡献的人有帮助。如果git仓库在github上，那么<code>npm docs</code>命令能找到你。<br />这样做：</p>
+<pre><code class="language-json"> &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;git+https://github.com/vuejs/vue.git&quot;
+  },
+</code></pre>
+<p>URL应该是公开的（即便是只读的）能直接被未经过修改的版本控制程序处理的url。不应该是一个html的项目页面。因为它是给计算机看的。</p>
+<p><a name="JDcIm"></a></p>
+<h4 id="scripts">scripts</h4>
+<p>“scripts”是一个由脚本命令组成的hash对象，他们在包不同的生命周期中被执行。key是生命周期事件，value是要运行的命令。</p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;rollup -w -c scripts/config.js --environment TARGET:web-full-dev&quot;,
+		...
+ },
+</code></pre>
+<p>更多详细请看 <a href="https://npmjs.org/doc/misc/npm-scripts.html">npm-scripts(7)</a>
+<a name="obARB"></a></p>
+<h4 id="config">config</h4>
+<pre><code class="language-json">&quot;config&quot;: {
+    &quot;commitizen&quot;: {
+      &quot;path&quot;: &quot;./node_modules/cz-conventional-changelog&quot;
+    }
+ }
+</code></pre>
+<p>config对象可用于设置在升级过程中持久存在的程序包脚本中使用的配置参数。例如，如果包具有以下内容：
+<a name="v2B9P"></a></p>
+<h4 id="dependencies">dependencies</h4>
+<p>生产依赖包，请不要将测试或过渡性的依赖放在<code>dependencies</code>中。</p>
+<pre><code class="language-json">&quot;dependencies&quot;: {
+    &quot;accepts&quot;: &quot;~1.3.7&quot;,
+    &quot;array-flatten&quot;: &quot;1.1.1&quot;,
+ 		...
+ },
+</code></pre>
+<p><a name="kJZnq"></a></p>
+<h4 id="devdependencies">devDependencies</h4>
+<p>开发依赖包，如果有人要使用你的模块，那么他们可能不需要你开发使用的外部测试或者文档框架。<br />在这种情况下，最好将这些附属的项目列在<code>devDependencies</code>中。</p>
+<pre><code class="language-json">&quot;devDependencies&quot;: {
+    &quot;after&quot;: &quot;0.8.2&quot;,
+    &quot;connect-redis&quot;: &quot;3.4.1&quot;,
+   	...
+ },
+</code></pre>
+<p><a name="ffgzX"></a></p>
+<h3 id="语义化版本控制规范semversemantic-versioning">语义化版本控制规范（SemVer）Semantic Versioning</h3>
+<p><a name="fLVKc"></a></p>
+<h4 id="semver规则">SemVer规则</h4>
+<p>版本格式：主版本号.次版本号.修订号，版本号递增规则如下：</p>
+<ol>
+<li>主版本号：当你做了不兼容的 API 修改;</li>
+<li>次版本号：当你做了向下兼容的功能性新增;</li>
+<li>修订号：当你做了向下兼容的问题修正;</li>
+</ol>
+<p>先行版本号及版本编译元数据可以加到“主版本号.次版本号.修订号”的后面，作为延伸。<br />当主版本号升级后，次版本号和修订号需要重置为0，次版本号进行升级后，修订版本需要重置为0。</p>
+<p><a name="93jNn"></a></p>
+<h4 id="semver-两个概念">SemVer 两个概念</h4>
+<ul>
+<li>固定版本：是指例如 0.4.1、1.2.7、1.2.4-beta.0 这样表示包的特定版本的字符串；</li>
+<li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4；
+<a name="Po3hr"></a></li>
+</ul>
+<h4 id=""></h4>
+<p><a name="yXDl9"></a></p>
+<h4 id="先行版本pre-release-version">先行版本（<strong>Pre-release Version</strong>）</h4>
+<p>先行版本号可以作为发布正式版之前的版本，格式是在修订版本号后面加上一个连接号（-），再加上一连串以点（.）分割的标识符，标识符可以由英文、数字和连接号（[0-9A-Za-z-]）组成。</p>
+<pre><code class="language-json">1.0.0-alpha
+1.0.0-alpha.1
+1.0.0-0.3.7
+1.0.0-x.7.z.92
+</code></pre>
+<p><strong>常见的先行版本号名称：</strong></p>
+<ul>
+<li>alpha：是内部测试版,一般不向外部发布,会有很多Bug.一般只有测试人员使用;</li>
+<li>beta：也是测试版，这个阶段的版本会一直加入新的功能。在Alpha版之后推出;</li>
+<li>rc：Release　Candidate)  系统平台上就是发行候选版本。RC版不会再加入新的功能了，主要着重于除错;</li>
+</ul>
+<p><a name="fxTTg"></a></p>
+<h4 id="依赖规则">依赖规则</h4>
+<p>npm依赖的规则，有<code>^</code>、<code>~</code>、<code>&gt;</code>、<code>&lt;</code>、<code>=</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>-</code>、<code>||</code>、<code>x</code>、<code>X</code>、<code>*</code> 等符号；</p>
+<p><code>**^**</code>：表示同一主版本号，不小于当前指定版本号的版本好号。</p>
+<pre><code class="language-json">dependencies:{
+	vue:&quot;^2.6.2&quot; 
+}
+// npm install 安装最新依赖，会下载2.6.3、2.7.1 不会下载2.6.1、3.0.0
+</code></pre>
+<p><code>~</code> ：表示同一主版本号和次版本号中，不小于指定版本号的版本号。</p>
+<pre><code class="language-json">dependencies:{
+	vue:&quot;~2.6.2&quot; 
+}
+// npm install 安装最新依赖，会下载2.6.3、2.6.6 不会下载2.6.1 2.7.0
+</code></pre>
+<p><code>&lt;、=、&gt;=、&lt;=、-</code>：用来指定一个版本号范围。</p>
+<pre><code class="language-json">dependencies:{
+	vue:&quot;&gt;2.6.2&quot;, 
+},
+&quot;engines&quot;: {
+  node: &quot;&gt;= 0.10.0&quot;
+},
+//`1.1.1 - 1.2.0`
+//注意使用 `-` 的时候，必须两边都有空格。
+</code></pre>
+<p><code>||</code>：表示或</p>
+<pre><code class="language-json">dependencies:{
+	vue:&quot;&lt;2.6.2 || &gt;2.5.1&quot;, 
+},
+</code></pre>
+<p><code>x</code>、<code>X</code>、<code>*</code>：表示通配符</p>
+<pre><code class="language-json">dependencies:{
+	qs:&quot;*&quot;,
+  vue:&quot;2.x&quot;
+},
+//`*` 对应所有版本号
+//`2.x` 对应所有主版本号为 2 的版本号
+</code></pre>
+<p><a href="https://www.cnblogs.com/PeunZhang/p/5553574.html">npm常用命令详解</a><br /><a href="https://www.jianshu.com/p/7bba18925fbf">一分钟教你发布一个npm包</a><br /><a href="https://www.jianshu.com/p/739e142923b2">NPM模块的TAG管理</a><br /><a href="https://docs.npmjs.com/files/package.json">package.json英文文档</a><br /><a href="https://github.com/ericdum/mujiang.info/issues/6/">package.json中文文档</a><br /><a href="https://semver.org/lang/zh-CN/">Semver 中文网</a><br /><a href="https://www.jianshu.com/p/a7490344044f">Semver 语义化版本规范</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://ducenand.github.io//tag/jKVQmMbTZ" class="tag">
+                    webpack
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ducenand.github.io//post/tan-suo-yu-fa-xian-di-3-qi">
+                  <h3 class="post-title">
+                    探索与发现：第3期
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd16f83efa60cf99e37fa',
+        clientSecret: 'd8e9ff4f182f14ad688436e5ef8dafb24d9417d1',
+        repo: 'ducenand.github.io',
+        owner: 'ducenand',
+        admin: ['ducenand'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
