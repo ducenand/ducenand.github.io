@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-07-14T08:46:22.129Z</updated>
+    <updated>2019-07-14T14:55:18.579Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -394,7 +394,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 <pre><code class="language-json">npm unpublish alan-npm-test --force 
 </code></pre>
 <p>24小时内你可以删除自己发布的库，并且没有被下载，之后你就再也不能删除了。</p>
-<p>package.json 介绍</p>
+<h3 id="packagejson-介绍">package.json 介绍</h3>
 <pre><code class="language-json">
 {
   &quot;name&quot;: &quot;express&quot;,
