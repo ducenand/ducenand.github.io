@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-07-14T08:38:35.287Z</updated>
+    <updated>2019-07-14T08:42:19.860Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -16,9 +16,9 @@
         <link href="https://ducenand.github.io//post/npm-bao-guan-li-qi">
         </link>
         <updated>2019-07-14T08:36:50.000Z</updated>
-        <summary type="html"><![CDATA[<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562050872655-a4811ea7-9871-4372-9474-60421c035527.png#align=left&amp;display=inline&amp;height=385&amp;name=image.png&amp;originHeight=770&amp;originWidth=1428&amp;size=69197&amp;status=done&amp;width=714" alt="image.png"></h3>
+        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562050872655-a4811ea7-9871-4372-9474-60421c035527.png#align=left&amp;display=inline&amp;height=385&amp;name=image.png&amp;originHeight=770&amp;originWidth=1428&amp;size=69197&amp;status=done&amp;width=714" alt="image.png"></p>
 ]]></summary>
-        <content type="html"><![CDATA[<h3 id="imagepng"><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562050872655-a4811ea7-9871-4372-9474-60421c035527.png#align=left&amp;display=inline&amp;height=385&amp;name=image.png&amp;originHeight=770&amp;originWidth=1428&amp;size=69197&amp;status=done&amp;width=714" alt="image.png"></h3>
+        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562050872655-a4811ea7-9871-4372-9474-60421c035527.png#align=left&amp;display=inline&amp;height=385&amp;name=image.png&amp;originHeight=770&amp;originWidth=1428&amp;size=69197&amp;status=done&amp;width=714" alt="image.png"></p>
 <!-- more -->
 <p><a name="kQu9L"></a></p>
 <h3 id="npm安装和定义">NPM安装和定义</h3>
