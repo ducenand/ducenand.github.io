@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>规范IDE开发工具 | 似水流年</title>
+<meta name="description" content="一万年太久，只争朝夕！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1564021498833">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062200-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143062200-1');
+</script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ducenand.github.io/">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1564021498833" class="site-logo">
+        <h1 class="site-title">似水流年</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ducenand" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一万年太久，只争朝夕！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/ducenand/ducenand.github.io" target="_blank"></a> | <a class="rss" href="https://ducenand.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">规范IDE开发工具</h2>
+            <div class="post-date">2019-07-25</div>
+            
+            <div class="post-content">
+              <h2 id="推荐使用ide">推荐使用IDE</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/">VSCode下载安装</a></li>
+<li><a href="https://www.jetbrains.com/webstorm">WebStorm下载安装</a> <a href="https://blog.csdn.net/hdp134793/article/details/81530472">Webstorm破解解方法</a></li>
+</ul>
+<!-- more -->
+<p><a name="I6YoN"></a></p>
+<h2 id="editorconfig-统一编辑器规范">EditorConfig 统一编辑器规范</h2>
+<p><strong><a href="https://editorconfig.org/">EditorConfig</a> <strong>助于为跨越各种编辑器和</strong>IDE</strong>的同一项目的多人开发维护统一的编码样式。</p>
+<p><a name="XNY7T"></a></p>
+<h3 id="项目使用-editorconfig">项目使用 <code>.editorconfig</code></h3>
+<pre><code class="language-bash"># https://editorconfig.org/
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+</code></pre>
+<p><strong>执行顺序：自上而下</strong><br />**
+<a name="NWAl1"></a></p>
+<h4 id="配置项介绍">配置项介绍</h4>
+<p><strong>1.</strong><code>**root &lt;blooean&gt;**</code></p>
+<blockquote>
+<p>是否是顶级配置文件，设置为true的时候才会停止搜索.editorconfig文件</p>
+</blockquote>
+<p><strong>2.</strong><code>**charset &lt;&quot;latin&quot; | &quot;utf-8&quot; | &quot;utf-8-bom&quot; | &quot;utf-16be&quot; | &quot;utf-16le&quot;&gt;**</code></p>
+<blockquote>
+<p>编码格式</p>
+</blockquote>
+<p><strong>3.</strong><code>**indent_style &lt;&quot;tab&quot; | &quot;space&quot;&gt;**</code></p>
+<blockquote>
+<p>缩进方式</p>
+</blockquote>
+<p><strong>4.</strong><code>**indent_size &lt;number&gt;**</code><br />缩进大小<br /><strong>5.</strong><code>**end_of_line &lt;&quot;lf&quot; | &quot;cr&quot; | &quot;crlf&quot;&gt;**</code></p>
+<blockquote>
+<p>换行符类型</p>
+</blockquote>
+<ul>
+<li>cr：Carriage Return，对应ASCII中转义字符\r，表示回车</li>
+<li>lf：Linefeed，对应ASCII中转义字符\n，表示换行</li>
+<li>crlf：Carriage Return &amp; Linefeed，\r\n，表示回车并换行</li>
+</ul>
+<p><strong>6.</strong><code>**insert_final_newline &lt;blooean&gt;**</code></p>
+<blockquote>
+<p>是否让文件以空行结束</p>
+</blockquote>
+<p><strong>7.</strong><code>**trim_trailing_whitespace &lt;blooean&gt;**</code></p>
+<blockquote>
+<p>是否删除行尾空格</p>
+</blockquote>
+<p><strong>8.</strong><code>**max_line_length **``**&lt;positive integers(正整数) |  off&gt;**</code></p>
+<blockquote>
+<p>最大行宽</p>
+</blockquote>
+<p><a name="tPTzr"></a></p>
+<h4 id="常用通配符介绍">常用通配符介绍</h4>
+<p><strong><code>*</code></strong></p>
+<blockquote>
+<p>匹配除/之外的任意字符</p>
+</blockquote>
+<p><code>******</code></p>
+<blockquote>
+<p>匹配任意字符串</p>
+</blockquote>
+<p><strong><code>?</code></strong></p>
+<blockquote>
+<p>匹配任意单个字符</p>
+</blockquote>
+<p><strong><code>[name]</code></strong></p>
+<blockquote>
+<p>匹配name字符</p>
+</blockquote>
+<p><strong><code>[!name]</code></strong></p>
+<blockquote>
+<p>不匹配name字符</p>
+</blockquote>
+<p><strong><code>[s1,s2,s3]</code></strong></p>
+<blockquote>
+<p>匹配给定的字符串</p>
+</blockquote>
+<p><strong><code>[num1..num2]</code></strong></p>
+<blockquote>
+<p>匹配num1到mun2直接的整数</p>
+</blockquote>
+<p><a name="yqmbO"></a></p>
+<h4 id="vscode搜索安装插件配合使用">VSCode搜索安装插件配合使用</h4>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563764525352-58f1e454-cf1d-400e-8918-c01af9f5ac3e.png#align=left&amp;display=inline&amp;height=345&amp;name=QQ20190722-0.png&amp;originHeight=345&amp;originWidth=1097&amp;size=25417&amp;status=done&amp;width=1097" alt="QQ20190722-0.png"></p>
+<p><a name="HcxvG"></a></p>
+<h4 id="webstorm-不需下载插件ide默认支持">WebStorm 不需下载插件，IDE默认支持</h4>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563765117193-c5033b10-085e-4d5d-b4d0-2a2233d4f516.png#align=left&amp;display=inline&amp;height=193&amp;name=image.png&amp;originHeight=385&amp;originWidth=756&amp;size=51931&amp;status=done&amp;width=378" alt="image.png"></p>
+<p><a name="ObAH5"></a></p>
+<h2 id="eslint-配置错误检测提示">Eslint 配置错误检测提示<a href="https://editorconfig.org/"></a></h2>
+<p><a name="grxdQ"></a></p>
+<h3 id="提示效果展示">提示效果展示</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563776250061-31853dfc-006c-43ea-bba3-b34176b1f2f4.png#align=left&amp;display=inline&amp;height=61&amp;name=image.png&amp;originHeight=121&amp;originWidth=488&amp;size=15304&amp;status=done&amp;width=244" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563776304657-147f64b9-dd30-449c-9194-a68d08964465.png#align=left&amp;display=inline&amp;height=61&amp;name=image.png&amp;originHeight=122&amp;originWidth=591&amp;size=16197&amp;status=done&amp;width=295.5" alt="image.png"></p>
+<p><a name="igqEC"></a></p>
+<h3 id="vscode-配置自动检测提示">VSCode 配置自动检测提示</h3>
+<blockquote>
+<p>下载ESLint 插件</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563778253958-1fabf583-0c7a-49c0-a0cf-278fb6951d90.png#align=left&amp;display=inline&amp;height=287&amp;name=73B0D19212530EED209A20682FF7AB90.png&amp;originHeight=287&amp;originWidth=1198&amp;size=18228&amp;status=done&amp;width=1198" alt="73B0D19212530EED209A20682FF7AB90.png"></p>
+<blockquote>
+<p>vscode 安装eslint插件后会默认支持项目<code>.eslintrc.js</code>配置错误提示</p>
+</blockquote>
+<p><a name="rEsRL"></a></p>
+<h3 id="vscode-配置保存文件eslint自动修复错误">VSCode 配置保存文件ESLint自动修复错误</h3>
+<blockquote>
+<p>文件-&gt;首选项-&gt;设置-&gt;找到ESLint 选中Auto Fix On Save</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563778632705-35f10b4a-c8b7-4079-baba-65cdb5c2084c.png#align=left&amp;display=inline&amp;height=607&amp;name=516D5B0B96830C7B27D7D219074CCC1A.png&amp;originHeight=607&amp;originWidth=1158&amp;size=29684&amp;status=done&amp;width=1158" alt="516D5B0B96830C7B27D7D219074CCC1A.png"></p>
+<p><a name="7fvb5"></a></p>
+<h3 id="webstorm-配置自动检测提示">WebStorm 配置自动检测提示</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563776656013-1ab221e1-10c4-45db-a986-0d14d21149ca.png#align=left&amp;display=inline&amp;height=297&amp;name=image.png&amp;originHeight=594&amp;originWidth=1172&amp;size=97033&amp;status=done&amp;width=586" alt="image.png"></p>
+<p><a name="pVW4e"></a></p>
+<h3 id="webstorm-配置保存文件eslint自动修复错误">WebStorm 配置保存文件ESLint自动修复错误</h3>
+<p>1.方法一设置快捷键修复</p>
+<blockquote>
+<p>打开设置 -&gt; Keymap 搜索 Fix ESLint Problems，双击配置快捷键，这里使用的是Ctrl + S。如果有冲突，选择其快捷键。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563780074365-97f558bb-aa2b-40c4-8cc4-91a7b10eb73c.png#align=left&amp;display=inline&amp;height=286&amp;name=image.png&amp;originHeight=572&amp;originWidth=1168&amp;size=101688&amp;status=done&amp;width=584" alt="image.png"><br />2.方法二监听文件变化自动修复</p>
+<blockquote>
+<p>打开设置-&gt; 搜索 File Watchers 添加新的prettier规则</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563780479441-7b3ce362-6f9c-4375-a980-04dda69d302c.png#align=left&amp;display=inline&amp;height=406&amp;name=image.png&amp;originHeight=811&amp;originWidth=1166&amp;size=108670&amp;status=done&amp;width=583" alt="image.png"></p>
+<blockquote>
+<p>选择File type 为 Any ,增加项目Scope作用域</p>
+</blockquote>
+<p><strong><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563780536503-8a61015d-0e4c-41e5-af3b-4bcc746db3e3.png#align=left&amp;display=inline&amp;height=259&amp;name=image.png&amp;originHeight=518&amp;originWidth=936&amp;size=60336&amp;status=done&amp;width=468" alt="image.png"></strong></p>
+<blockquote>
+<p>新建作用域增加规则，排除不需要监听的文件。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563852610869-d54836fa-1536-4a20-9dc1-198b2ca15cd0.png#align=left&amp;display=inline&amp;height=413&amp;name=image.png&amp;originHeight=826&amp;originWidth=989&amp;size=70987&amp;status=done&amp;width=494.5" alt="image.png">
+<a name="DL6Mx"></a></p>
+<h2 id="单词拼写检查">单词拼写检查</h2>
+<p><a name="onVIn"></a></p>
+<h3 id="vscode-下载-code-spell-checker-支持单词拼写检查">VSCode 下载 Code Spell Checker 支持单词拼写检查</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563795402622-4a949b0b-c31a-46c5-b0ed-c1f809453bcd.png#align=left&amp;display=inline&amp;height=232&amp;name=57BCD1FD7FA43479D8D9C60AC415016B.png&amp;originHeight=232&amp;originWidth=1155&amp;size=18425&amp;status=done&amp;width=1155" alt="57BCD1FD7FA43479D8D9C60AC415016B.png"></p>
+<p><a name="pa4MW"></a></p>
+<h3 id="webstrom-默认支持单词拼写检查">WebStrom 默认支持单词拼写检查</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563795573557-8d4fc446-ade6-4cad-bb24-a8e60b3c7a34.png#align=left&amp;display=inline&amp;height=397&amp;name=image.png&amp;originHeight=794&amp;originWidth=1174&amp;size=142710&amp;status=done&amp;width=587" alt="image.png"></p>
+<p><a name="rGfFy"></a></p>
+<h2 id="ide设置vue代码片段">IDE设置VUE代码片段</h2>
+<blockquote>
+<p>设置代码片段快速生成符合设计规范的组件</p>
+</blockquote>
+<p><a name="AMnRV"></a></p>
+<h3 id="vscode配置代码片段">VSCode配置代码片段</h3>
+<blockquote>
+<p>文件-&gt;首选项-&gt;用户代码片段-&gt;搜索vue.json-&gt;添加下面代码片段</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/173770/1563853030282-c04ab2ee-e1a2-48c3-a940-08626d251cc9.jpeg#align=left&amp;display=inline&amp;height=616&amp;name=AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg&amp;originHeight=616&amp;originWidth=802&amp;size=69070&amp;status=done&amp;width=802" alt="AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg">
+<a name="IiegT"></a></p>
+<h4 id="vscode代码片段">VSCode代码片段</h4>
+<pre><code class="language-bash">{
+	&quot;vue-tpl&quot;: {
+	  &quot;prefix&quot;: &quot;vue-tpl&quot;,
+	  &quot;body&quot;: [
+		&quot;&lt;template&gt;&quot;,
+		&quot;  &lt;div class=\&quot;toggle toggle--simple\&quot;&gt;&quot;,
+    	&quot;    &lt;div class=\&quot;toggle__control toggle__control--active\&quot;&gt;&quot;,
+    	&quot;      &lt;h2 class=\&quot;toggle__title\&quot;&gt;Title&lt;/h2&gt;&quot;,
+    	&quot;    &lt;/div&gt;&quot;,
+    	&quot;    &lt;div class=\&quot;toggle__details toggle__details--active\&quot;&gt;&quot;,
+        &quot;      ...&quot;,
+    	&quot;    &lt;/div&gt;&quot;,
+    	&quot;      ...&quot;,
+		&quot;  &lt;/div&gt;&quot;,
+		&quot;&lt;/template&gt;&quot;,
+  
+		&quot;&lt;script&gt;&quot;,
+		&quot;export default {&quot;,
+		&quot;  name: \&quot;$1\&quot;,&quot;,
+		&quot;  components: {},&quot;,
+    &quot;  props: {},&quot;,
+		&quot;  data() {&quot;,
+		&quot;    return {};&quot;,
+		&quot;  },&quot;,
+		&quot;  computed: {},&quot;,
+		&quot;  methods: {},&quot;,
+		&quot;  watch: {},&quot;,
+		&quot;  created() {},&quot;,
+		&quot;  mounted() {}&quot;,
+		&quot;};&quot;,
+		&quot;&lt;/script&gt;&quot;,
+  
+		&quot;&lt;style lang=\&quot;scss\&quot; scoped&gt;&quot;,
+		&quot;  //.toggle {}&quot;,
+		&quot;  //.toggle--simple {}&quot;,
+		&quot;  //.toggle__control {}&quot;,
+		&quot;  //.toggle__control--active {}&quot;,
+		&quot;  //...&quot;,
+		&quot;&lt;/style&gt;&quot;,
+	  ],
+	  &quot;description&quot;: &quot;vue template&quot;
+	}
+}
+</code></pre>
+<p><a name="qjDhE"></a></p>
+<h4 id="vscode使用代码片段">VSCode使用代码片段</h4>
+<blockquote>
+<p>.vue 文件输入vue-tpl</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563853388239-c52650d8-9514-4167-b6fc-cd8c98e3af60.png#align=left&amp;display=inline&amp;height=167&amp;name=9B973F4ACD5DFDE369990BA7ECEDC6C6.png&amp;originHeight=167&amp;originWidth=700&amp;size=4799&amp;status=done&amp;width=700" alt="9B973F4ACD5DFDE369990BA7ECEDC6C6.png"></p>
+<p><a name="IVnLo"></a></p>
+<h3 id="webstorm配置代码片段">WebStorm配置代码片段</h3>
+<blockquote>
+<p>Preferences-&gt; 搜索Live Template-&gt;选择Live Templates-&gt;右侧➕号添加片段-&gt;片段命名描述-&gt;change选择作用域-&gt;添加下方片段至Template text中</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563853859107-fa7d506b-e1be-4493-a918-3bc0e5bef88a.png#align=left&amp;display=inline&amp;height=461&amp;name=image.png&amp;originHeight=922&amp;originWidth=1535&amp;size=186335&amp;status=done&amp;width=767.5" alt="image.png">
+<a name="dHXD4"></a></p>
+<h4 id="webstorm代码片段">Webstorm代码片段</h4>
+<pre><code class="language-bash">&lt;template&gt;
+  &lt;div class=&quot;toggle toggle--simple&quot;&gt;
+    &lt;div class=&quot;toggle__control toggle__control--active&quot;&gt;
+      &lt;h2 class=&quot;toggle__title&quot;&gt;Title&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;toggle__details toggle__details--active&quot;&gt;
+      ...
+    &lt;/div&gt;
+    ...
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  name: &quot;$componentName$&quot;,
+  components: {},
+  props: {},
+  data() {
+    return {};
+  },
+  computed: {},
+  methods: {},
+  watch: {},
+  created() {},
+  mounted() {}
+};
+&lt;/script&gt;
+&lt;style lang=&quot;scss&quot; scoped&gt;
+//.toggle {}
+//.toggle--simple {}
+//.toggle__control {}
+//.toggle__control--active {}
+//...
+&lt;/style&gt;
+</code></pre>
+<p><a name="Purk5"></a></p>
+<h4 id=""></h4>
+<p><a name="DNdHS"></a></p>
+<h4 id="webstorm使用代码片段">WebStorm使用代码片段</h4>
+<blockquote>
+<p>.vue 文件中输入vue-tpl 按下**<code>tab</code>**键</p>
+</blockquote>
+<p><a name="PvyI3"></a></p>
+<h3 id="代码片段介绍">代码片段介绍</h3>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563855941554-275867ba-ba93-4dbe-b718-37ad02be5cfe.png#align=left&amp;display=inline&amp;height=447&amp;name=image.png&amp;originHeight=893&amp;originWidth=496&amp;size=82001&amp;status=done&amp;width=248" alt="image.png">
+<a name="k2KCh"></a></p>
+<h4 id="1bem规范命名css">1.BEM规范命名CSS</h4>
+<p>BEM是由Yandex提出的给一个CSS命名方法, 该方法要求使用一个CSS类名, 尽可能使用以下三者组成:</p>
+<ul>
+<li>块名: 所属组件的名称</li>
+<li>元素: 元素在块里面的名称</li>
+<li>修饰符: 任何与块或元素相关联的的修饰符</li>
+</ul>
+<p><strong>块名</strong><br />这里的块名指的是一个独立的模块或组件. 例如一个<code>&lt;header&gt;</code>可以用做一个模块, <code>&lt;header&gt;</code>中的<code>&lt;nav&gt;</code>可以用作一个模块. 模块之间是可以相互嵌套的. 上面的示例代码中 ,toggle就是一个独立的模块<br /><strong>元素</strong><br />元素是指无法用在其他块名中的部分, 在BEM方法中, 元素跟在块名后面使用<code>__</code>连接, 之所以约定使用双下划线是因为方便在块名中使用单下划线命名. 上面示例代码中的<code>toggle__control</code>,<code>toggle__title</code>就是块名+元素的命名方式.<br /><strong>修饰符</strong><br />修饰符与SMACSS中的状态类似, 在BEM方法中, 修饰符需要跟在元素后面使用<code>--</code>连接. 有的人会觉得这种写法会使得代码冗余, SMACSS使用<code>is-active</code>同样可以表示同样的作用, 为什么上面的代码要使用<code>toggle__details--active</code>呢? 其实, 如果单独看<code>is-active</code>这个名字, 我们并不知道它们的含义是什么, 但是当看到一个<code>toggle__details--active</code>的类名, 我们就知道它是表示: 这个元素的名称是<code>details</code>, 位置在<code>toggle</code>组件里, 状态为<code>active</code>.
+<a name="ZBtFH"></a></p>
+<h4 id="2遵循vue-cli项目目录结构设计中的-vue-生命周期排列顺序">2.遵循<a href="http://wiki.corp.talcloud.com/pages/viewpage.action?pageId=14352391">vue-cli项目目录结构设计</a>中的 vue 生命周期排列顺序</h4>
+<p><a name="WXXnf"></a></p>
+<h4 id="3每个css类名都有一个独一无二的标识无需嵌套">3.每个CSS类名都有一个独一无二的标识，无需嵌套</h4>
+<p>CSS使用BEM规范后，每一个CSS类名都有一个独一无二的标识，这样是每个CSS类名都对应到某一组独属于该元素的CSS属性，而不会随着具体情境或选择器的使用而变化。</p>
+<pre><code class="language-html">&lt;div class=&quot;main&quot;&gt;
+	&lt;h2 class=&quot;content__title&quot;&gt;Header&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sidebar&quot;&gt;
+	&lt;h2 class=&quot;content__title--reversed&quot;&gt;Sidebar Header&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&quot;calendar&quot;&gt;
+  &lt;h2 class=&quot;calendar__title&quot;&gt;Calendar Header&lt;/h2&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">/*组件文件夹*/
+.content__title {
+	font-size: 24px;
+  color: red;
+}
+.content__title--reversed {
+  font-size: 20px;
+  color: white;
+}
+.calendar__title {
+	font-size: 20px;
+  color: red
+}
+/*布局文件夹*/
+.main{
+  float: left;
+  ...
+}
+.sidebar {
+	float: right;
+  ...
+}
+
+</code></pre>
+<p>这样就解决了由于依赖位置而造成CSS样式混乱的问题。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://ducenand.github.io//tag/aLZa8f_z3" class="tag">
+                    前端架构设计
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ducenand.github.io//post/tan-suo-yu-fa-xian-di-5-qi">
+                  <h3 class="post-title">
+                    探索与发现：第5期
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd16f83efa60cf99e37fa',
+        clientSecret: 'd8e9ff4f182f14ad688436e5ef8dafb24d9417d1',
+        repo: 'ducenand.github.io',
+        owner: 'ducenand',
+        admin: ['ducenand'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
