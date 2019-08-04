@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-07-25T02:25:03.308Z</updated>
+    <updated>2019-08-04T09:00:05.317Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://ducenand.github.io//images/avatar.png</logo>
     <icon>https://ducenand.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, 似水流年</rights>
+    <entry>
+        <title type="html"><![CDATA[ 探索与发现：第6期]]></title>
+        <id>https://ducenand.github.io//post/tan-suo-yu-fa-xian-di-6-qi</id>
+        <link href="https://ducenand.github.io//post/tan-suo-yu-fa-xian-di-6-qi">
+        </link>
+        <updated>2019-07-28T08:58:42.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>这里记录一周新鲜有趣的发现与探索。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>这里记录一周新鲜有趣的发现与探索。</p>
+</blockquote>
+<!-- more -->
+<p>1、最近，一个圆形里有沙漏的图案在欧美开始流行起来，不少环保活动家都开始使用这个符号，呼吁当地政府和民众，关注物种灭绝问题。圆圈代表着地球，圈住的X代表着eXtinction“灭绝”，他的形状像沙漏，象征着需要人们迫切的行动。每天有60个物种灭绝，我们自己也走向灭绝。<a href="https://www.thepaper.cn/newsDetail_forward_4012388">详情</a><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1564403565331-434fe28b-68cc-4cc3-be47-caa7a2164792.png#align=left&amp;display=inline&amp;height=486&amp;name=image.png&amp;originHeight=972&amp;originWidth=1752&amp;size=1107782&amp;status=done&amp;width=876" alt="image.png"><br />2、欣赏一下英版的，精彩群口相声，最近<a href="https://s1-video.huxiucdn.com/4845b87ede4e4cf6ae2db77217185a2c/b58b2e4e97114fc09e9e2108f48975bd-4c7352b58ebb58127ca8b7ea51ef6477-sd.mp4">梅姨英云社告别大秀</a>，唇枪舌战。好不精彩，英国议会制度有点意思。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1564404465534-799efbb4-d3c9-4415-8407-714f82e4f7b3.png#align=left&amp;display=inline&amp;height=320&amp;name=image.png&amp;originHeight=640&amp;originWidth=1162&amp;size=863458&amp;status=done&amp;width=581" alt="image.png"><br />3、最近特斯拉CEO埃隆·马斯克（Elon Musk）旗下太空探索技术公司SpaceX今日对其未来的星际飞船原型StarHopper（“星虫”）进行了首次自由悬浮测试。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1564404709919-545c7440-fd5e-47fe-8a89-50348f8c114f.png#align=left&amp;display=inline&amp;height=327&amp;name=image.png&amp;originHeight=654&amp;originWidth=1178&amp;size=755726&amp;status=done&amp;width=589" alt="image.png"><br />4、巴黎42度，荷兰40度......欧洲12国高温破纪录。欧洲酷热难耐，经历了今年夏天的最新一波热浪，至少有12个国家经历了创纪录的高温。气象学家表示，继1880年有记录以来最热的6月之后，欧洲将迎来有记录以来最热的7月。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[规范IDE开发工具]]></title>
         <id>https://ducenand.github.io//post/gui-fan-ide-kai-fa-gong-ju</id>
@@ -1380,40 +1397,6 @@ npx fusuma start    # development
 <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561284880773-b107ead8-d7d8-4c2b-b5e2-b9f6a97d34c1.png#align=left&amp;display=inline&amp;height=401&amp;name=image.png&amp;originHeight=802&amp;originWidth=1432&amp;size=46357&amp;status=done&amp;width=716" alt="image.png"><br />9、<a href="https://github.com/huangjianke/Gitter">Gitter</a> 一款GitHub 的微信小程序客户端，用户可以在微信上看Github。便捷、颜值高、代码开源。</p>
 <p>10、<a href="https://cssfx.dev/">Cssfx</a> 该网站收集各种 CSS 特效，可以复制粘贴到自己的项目。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561285193038-633a2040-0890-4b7a-9f50-3182510f414b.png#align=left&amp;display=inline&amp;height=623&amp;name=image.png&amp;originHeight=1246&amp;originWidth=2310&amp;size=688953&amp;status=done&amp;width=1155" alt="image.png"></p>
 <p>11、<a href="https://www.canva.cn/">Canva</a> 让不懂设计的你也能做出优美大片。一个在线图片设计网站。各种免费模板供你使用。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561285391671-952a9120-7187-472a-b4fc-04ffbe090088.png#align=left&amp;display=inline&amp;height=345&amp;name=image.png&amp;originHeight=690&amp;originWidth=1942&amp;size=781645&amp;status=done&amp;width=971" alt="image.png"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么选择Webpack?]]></title>
-        <id>https://ducenand.github.io//post/wei-shi-me-xuan-ze-webpack</id>
-        <link href="https://ducenand.github.io//post/wei-shi-me-xuan-ze-webpack">
-        </link>
-        <updated>2019-06-16T07:01:18.000Z</updated>
-        <summary type="html"><![CDATA[<p><a name="RnUdT"></a></p>
-<h3 id="社区活跃生态丰富">社区活跃生态丰富</h3>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560927596479-93e6acbd-f8e0-411a-8523-14481328651e.png#align=left&amp;display=inline&amp;height=195&amp;name=image.png&amp;originHeight=390&amp;originWidth=1456&amp;size=59222&amp;status=done&amp;width=728" alt="image.png"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p><a name="RnUdT"></a></p>
-<h3 id="社区活跃生态丰富">社区活跃生态丰富</h3>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560927596479-93e6acbd-f8e0-411a-8523-14481328651e.png#align=left&amp;display=inline&amp;height=195&amp;name=image.png&amp;originHeight=390&amp;originWidth=1456&amp;size=59222&amp;status=done&amp;width=728" alt="image.png"></p>
-<!-- more --> 
-<p><a name="fbaoS"></a></p>
-<h3 id="官方迭代速度快维护好">官方迭代速度快维护好</h3>
-<ul>
-<li>6月10-6月17 一周的活跃情况</li>
-</ul>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560783492113-d2596562-7054-459d-bebf-3fa26eb33124.png#align=left&amp;display=inline&amp;height=596&amp;name=image.png&amp;originHeight=1192&amp;originWidth=1486&amp;size=192070&amp;status=done&amp;width=743" alt="image.png">
-<a name="jFFPd"></a></p>
-<h3 id="配置灵活和插件化扩展">配置灵活和插件化扩展</h3>
-<ul>
-<li>
-<p>配置很灵活对于不满足一些开发需要的，也是可以通过webpack插件机制进行扩展。定义自己的loader和plugin去满足自己团队个性化的需求。</p>
-</li>
-<li>
-<p>官方维护的loader和plugins很多</p>
-</li>
-</ul>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560782685930-f7868512-fc3b-485f-95ba-b71743444970.png#align=left&amp;display=inline&amp;height=646&amp;name=image.png&amp;originHeight=1292&amp;originWidth=1710&amp;size=708432&amp;status=done&amp;width=855" alt="image.png"></p>
-<p>参考：<br /><a href="https://webpack.docschina.org/loaders/">官方维护的loader</a><br /><a href="https://webpack.docschina.org/plugins/">官方维护的plugins</a><br /><a href="https://github.com/webpack/webpack/pulse">webpack活跃度参考</a></p>
 ]]></content>
     </entry>
 </feed>
