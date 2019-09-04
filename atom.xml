@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducenand.github.io/</id>
     <title>似水流年</title>
-    <updated>2019-08-29T02:44:42.599Z</updated>
+    <updated>2019-09-04T11:44:16.455Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducenand.github.io/"/>
     <link rel="self" href="https://ducenand.github.io//atom.xml"/>
@@ -99,7 +99,7 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 </code></pre>
-<p><strong>执行顺序：自上而下</strong><br />**
+<p><strong>执行顺序：自上而下</strong><br />**<br>
 <a name="NWAl1"></a></p>
 <h4 id="配置项介绍">配置项介绍</h4>
 <p><strong>1.</strong><code>**root &lt;blooean&gt;**</code></p>
@@ -213,7 +213,7 @@ trim_trailing_whitespace = false
 <blockquote>
 <p>新建作用域增加规则，排除不需要监听的文件。</p>
 </blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563852610869-d54836fa-1536-4a20-9dc1-198b2ca15cd0.png#align=left&amp;display=inline&amp;height=413&amp;name=image.png&amp;originHeight=826&amp;originWidth=989&amp;size=70987&amp;status=done&amp;width=494.5" alt="image.png">
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563852610869-d54836fa-1536-4a20-9dc1-198b2ca15cd0.png#align=left&amp;display=inline&amp;height=413&amp;name=image.png&amp;originHeight=826&amp;originWidth=989&amp;size=70987&amp;status=done&amp;width=494.5" alt="image.png"><br>
 <a name="DL6Mx"></a></p>
 <h2 id="单词拼写检查">单词拼写检查</h2>
 <p><a name="onVIn"></a></p>
@@ -232,7 +232,7 @@ trim_trailing_whitespace = false
 <blockquote>
 <p>文件-&gt;首选项-&gt;用户代码片段-&gt;搜索vue.json-&gt;添加下面代码片段</p>
 </blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/173770/1563853030282-c04ab2ee-e1a2-48c3-a940-08626d251cc9.jpeg#align=left&amp;display=inline&amp;height=616&amp;name=AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg&amp;originHeight=616&amp;originWidth=802&amp;size=69070&amp;status=done&amp;width=802" alt="AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg">
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/173770/1563853030282-c04ab2ee-e1a2-48c3-a940-08626d251cc9.jpeg#align=left&amp;display=inline&amp;height=616&amp;name=AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg&amp;originHeight=616&amp;originWidth=802&amp;size=69070&amp;status=done&amp;width=802" alt="AE0E1B07AD6EC4808BDAF58B55A81AE1.jpg"><br>
 <a name="IiegT"></a></p>
 <h4 id="vscode代码片段">VSCode代码片段</h4>
 <pre><code class="language-bash">{
@@ -290,7 +290,7 @@ trim_trailing_whitespace = false
 <blockquote>
 <p>Preferences-&gt; 搜索Live Template-&gt;选择Live Templates-&gt;右侧➕号添加片段-&gt;片段命名描述-&gt;change选择作用域-&gt;添加下方片段至Template text中</p>
 </blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563853859107-fa7d506b-e1be-4493-a918-3bc0e5bef88a.png#align=left&amp;display=inline&amp;height=461&amp;name=image.png&amp;originHeight=922&amp;originWidth=1535&amp;size=186335&amp;status=done&amp;width=767.5" alt="image.png">
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563853859107-fa7d506b-e1be-4493-a918-3bc0e5bef88a.png#align=left&amp;display=inline&amp;height=461&amp;name=image.png&amp;originHeight=922&amp;originWidth=1535&amp;size=186335&amp;status=done&amp;width=767.5" alt="image.png"><br>
 <a name="dHXD4"></a></p>
 <h4 id="webstorm代码片段">Webstorm代码片段</h4>
 <pre><code class="language-bash">&lt;template&gt;
@@ -336,7 +336,7 @@ export default {
 </blockquote>
 <p><a name="PvyI3"></a></p>
 <h3 id="代码片段介绍">代码片段介绍</h3>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563855941554-275867ba-ba93-4dbe-b718-37ad02be5cfe.png#align=left&amp;display=inline&amp;height=447&amp;name=image.png&amp;originHeight=893&amp;originWidth=496&amp;size=82001&amp;status=done&amp;width=248" alt="image.png">
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1563855941554-275867ba-ba93-4dbe-b718-37ad02be5cfe.png#align=left&amp;display=inline&amp;height=447&amp;name=image.png&amp;originHeight=893&amp;originWidth=496&amp;size=82001&amp;status=done&amp;width=248" alt="image.png"><br>
 <a name="k2KCh"></a></p>
 <h4 id="1bem规范命名css">1.BEM规范命名CSS</h4>
 <p>BEM是由Yandex提出的给一个CSS命名方法, 该方法要求使用一个CSS类名, 尽可能使用以下三者组成:</p>
@@ -345,7 +345,7 @@ export default {
 <li>元素: 元素在块里面的名称</li>
 <li>修饰符: 任何与块或元素相关联的的修饰符</li>
 </ul>
-<p><strong>块名</strong><br />这里的块名指的是一个独立的模块或组件. 例如一个<code>&lt;header&gt;</code>可以用做一个模块, <code>&lt;header&gt;</code>中的<code>&lt;nav&gt;</code>可以用作一个模块. 模块之间是可以相互嵌套的. 上面的示例代码中 ,toggle就是一个独立的模块<br /><strong>元素</strong><br />元素是指无法用在其他块名中的部分, 在BEM方法中, 元素跟在块名后面使用<code>__</code>连接, 之所以约定使用双下划线是因为方便在块名中使用单下划线命名. 上面示例代码中的<code>toggle__control</code>,<code>toggle__title</code>就是块名+元素的命名方式.<br /><strong>修饰符</strong><br />修饰符与SMACSS中的状态类似, 在BEM方法中, 修饰符需要跟在元素后面使用<code>--</code>连接. 有的人会觉得这种写法会使得代码冗余, SMACSS使用<code>is-active</code>同样可以表示同样的作用, 为什么上面的代码要使用<code>toggle__details--active</code>呢? 其实, 如果单独看<code>is-active</code>这个名字, 我们并不知道它们的含义是什么, 但是当看到一个<code>toggle__details--active</code>的类名, 我们就知道它是表示: 这个元素的名称是<code>details</code>, 位置在<code>toggle</code>组件里, 状态为<code>active</code>.
+<p><strong>块名</strong><br />这里的块名指的是一个独立的模块或组件. 例如一个<code>&lt;header&gt;</code>可以用做一个模块, <code>&lt;header&gt;</code>中的<code>&lt;nav&gt;</code>可以用作一个模块. 模块之间是可以相互嵌套的. 上面的示例代码中 ,toggle就是一个独立的模块<br /><strong>元素</strong><br />元素是指无法用在其他块名中的部分, 在BEM方法中, 元素跟在块名后面使用<code>__</code>连接, 之所以约定使用双下划线是因为方便在块名中使用单下划线命名. 上面示例代码中的<code>toggle__control</code>,<code>toggle__title</code>就是块名+元素的命名方式.<br /><strong>修饰符</strong><br />修饰符与SMACSS中的状态类似, 在BEM方法中, 修饰符需要跟在元素后面使用<code>--</code>连接. 有的人会觉得这种写法会使得代码冗余, SMACSS使用<code>is-active</code>同样可以表示同样的作用, 为什么上面的代码要使用<code>toggle__details--active</code>呢? 其实, 如果单独看<code>is-active</code>这个名字, 我们并不知道它们的含义是什么, 但是当看到一个<code>toggle__details--active</code>的类名, 我们就知道它是表示: 这个元素的名称是<code>details</code>, 位置在<code>toggle</code>组件里, 状态为<code>active</code>.<br>
 <a name="ZBtFH"></a></p>
 <h4 id="2遵循vue-cli项目目录结构设计中的-vue-生命周期排列顺序">2.遵循<a href="http://wiki.corp.talcloud.com/pages/viewpage.action?pageId=14352391">vue-cli项目目录结构设计</a>中的 vue 生命周期排列顺序</h4>
 <p><a name="WXXnf"></a></p>
@@ -462,14 +462,14 @@ export default {
 <ul>
 <li><strong>命令行工具 (CLI)</strong></li>
 </ul>
-<p>通过命令行和终端运行，开发者通过CLI与NPM打交道。<br />
+<p>通过命令行和终端运行，开发者通过CLI与NPM打交道。<br /><br>
 <br /><strong>在安装Node.js时会默认安装NPM包管理器</strong>，NPM完全由Javascript写成，和模块没啥区别，所以我们可以<code>npm install -g npm</code> 更新安装自己。</p>
 <p>随着前端工程化、模块化的快速发展，前端开发已经离不开npm包管理器了。在我们使用前端各大框架Vue、React、Angluar时，我们只需要<code>npm install [package name]</code>就可以安装使用我们需要的模块包，非常便捷高效。</p>
-<p>通过下图我们就能看出npm之火爆。总包量<strong>100多万</strong>，周下载量<strong>114亿</strong>。来自各大洲的开源软件开发者都在使用npm借鉴学习或者分享。同时也是Node.js获得成功重要原因之一。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562048207944-8e13b476-0e68-40f7-8b75-2db48a93ad3a.png#align=left&amp;display=inline&amp;height=281&amp;name=image.png&amp;originHeight=562&amp;originWidth=680&amp;size=41349&amp;status=done&amp;width=340" alt="image.png">
+<p>通过下图我们就能看出npm之火爆。总包量<strong>100多万</strong>，周下载量<strong>114亿</strong>。来自各大洲的开源软件开发者都在使用npm借鉴学习或者分享。同时也是Node.js获得成功重要原因之一。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562048207944-8e13b476-0e68-40f7-8b75-2db48a93ad3a.png#align=left&amp;display=inline&amp;height=281&amp;name=image.png&amp;originHeight=562&amp;originWidth=680&amp;size=41349&amp;status=done&amp;width=340" alt="image.png"><br>
 <a name="nDQ9W"></a></p>
 <h3 id="npm命令以及使用">NPM命令以及使用</h3>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561983337245-ad4b5fe6-37e5-4e14-ad3f-1bb27a64813a.png#align=left&amp;display=inline&amp;height=267&amp;name=image.png&amp;originHeight=534&amp;originWidth=1592&amp;size=101353&amp;status=done&amp;width=796" alt="image.png"></p>
-<p>以上图片罗列出NPM所有的命令，捡几个常用的命令学习；
+<p>以上图片罗列出NPM所有的命令，捡几个常用的命令学习；<br>
 <a name="Cs98I"></a></p>
 <h4 id="npm-install-安装模块">npm install 安装模块</h4>
 <p>安装形式：</p>
@@ -742,7 +742,7 @@ Password:
 Email: (this IS public) 316358726@qq.com
 Logged in as alan-du on https://registry.npmjs.org/.
 </code></pre>
-<p>用户登录后，可以向npm发送包。
+<p>用户登录后，可以向npm发送包。<br>
 <a name="3YghP"></a></p>
 <h4 id="npm-publish-发布模块">npm publish 发布模块</h4>
 <pre><code class="language-bash">npm publish [&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;] [--otp otpcode] [--dry-run]
@@ -879,16 +879,16 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 </code></pre>
 <p><a name="qKeJh"></a></p>
 <h4 id="name">name</h4>
-<p>在package.json中最重要的就是name和version字段。他们都是必须的，如果没有就无法install。name和version一起组成的标识在假设中是唯一的。改变包应该同时改变version。
+<p>在package.json中最重要的就是name和version字段。他们都是必须的，如果没有就无法install。name和version一起组成的标识在假设中是唯一的。改变包应该同时改变version。<br>
 <a name="Tpyw6"></a></p>
 <h4 id="version">version</h4>
-<p>version必须能被<a href="https://github.com/isaacs/node-semver">node-semver</a>解析，它被包在npm的依赖中。（要自己用可以执行<code>npm install semver</code>）<br />可用的“数字”或者“范围”见下文<strong>语义化版本控制范围SemVer</strong>.
+<p>version必须能被<a href="https://github.com/isaacs/node-semver">node-semver</a>解析，它被包在npm的依赖中。（要自己用可以执行<code>npm install semver</code>）<br />可用的“数字”或者“范围”见下文<strong>语义化版本控制范围SemVer</strong>.<br>
 <a name="lk9iR"></a></p>
 <h4 id="description">description</h4>
-<p>放简介，字符串，方便在<code>npm search</code>中搜索
+<p>放简介，字符串，方便在<code>npm search</code>中搜索<br>
 <a name="ANz7c"></a></p>
 <h4 id="keywords">keywords</h4>
-<p>关键字，数组、字符串，方便在<code>npm search</code>中搜索
+<p>关键字，数组、字符串，方便在<code>npm search</code>中搜索<br>
 <a name="qFi4h"></a></p>
 <h4 id="bugs">bugs</h4>
 <p>项目提交问题的url和（或）邮件地址</p>
@@ -926,7 +926,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 		...
  },
 </code></pre>
-<p>更多详细请看 <a href="https://npmjs.org/doc/misc/npm-scripts.html">npm-scripts(7)</a>
+<p>更多详细请看 <a href="https://npmjs.org/doc/misc/npm-scripts.html">npm-scripts(7)</a><br>
 <a name="obARB"></a></p>
 <h4 id="config">config</h4>
 <pre><code class="language-json">&quot;config&quot;: {
@@ -935,7 +935,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
     }
  }
 </code></pre>
-<p>config对象可用于设置在升级过程中持久存在的程序包脚本中使用的配置参数。例如，如果包具有以下内容：
+<p>config对象可用于设置在升级过程中持久存在的程序包脚本中使用的配置参数。例如，如果包具有以下内容：<br>
 <a name="v2B9P"></a></p>
 <h4 id="dependencies">dependencies</h4>
 <p>生产依赖包，请不要将测试或过渡性的依赖放在<code>dependencies</code>中。</p>
@@ -969,7 +969,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 <h4 id="semver-两个概念">SemVer 两个概念</h4>
 <ul>
 <li>固定版本：是指例如 0.4.1、1.2.7、1.2.4-beta.0 这样表示包的特定版本的字符串；</li>
-<li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4；
+<li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4；<br>
 <a name="Po3hr"></a></li>
 </ul>
 <h4 id=""></h4>
@@ -1100,7 +1100,7 @@ window.customElements.define('num-counter', Counter);
 <p>10、20世纪60年代，编程被看作是适合女孩子的工作，女性时尚杂志《时尚》（Cosmopolitan Magazine）称，编程这个工作很适合女孩子，收入很高（实习生8000美金一年，高级系统分析师2万美金一年；1960年的2万美金相当于现在的17万美金），并且刊登了 IBM 的系统工程师 Ann Richardson 的照片。——<a href="https://www.huxiu.com/article/305417.html">计算机刚出现的时候，是用女人头做计算能力单位的</a><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561871830018-58ce3948-7b8f-49bb-9908-d4c6de4afdd6.png#align=left&amp;display=inline&amp;height=570&amp;name=image.png&amp;originHeight=1140&amp;originWidth=1416&amp;size=1772949&amp;status=done&amp;width=708" alt="image.png"></p>
 <p>11、<a href="https://tiptap.scrumpy.io/">Tiptap</a> 基于vue.js的无渲染编辑器，该编辑器基于Prosemirror，完全可扩展且无渲染。您可以轻松地将自定义节点添加为Vue组件。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561872015343-7e5c577c-59e4-47fb-8b55-668abc391cf5.png#align=left&amp;display=inline&amp;height=271&amp;name=image.png&amp;originHeight=542&amp;originWidth=1288&amp;size=69973&amp;status=done&amp;width=644" alt="image.png"></p>
 <p>12、<a href="https://github.com/callstack/linaria">Linaria</a> 一个可以在JS中编写CSS的react模块，运行时为零，在构建期间将CSS提取到CSS文件。</p>
-<p>13、<a href="https://github.com/jdan/cleaver">Cleaver</a>是一个基于HTML5，可以用最短的时间做出超炫幻灯片的小工具。<br /><img src="https://cdn.nlark.com/yuque/0/2019/gif/173770/1561872657674-a9789288-dd2f-4e79-96c5-d0f62d1163d6.gif#align=left&amp;display=inline&amp;height=768&amp;name=68747470733a2f2f692e636c6f756475702e636f6d2f634973734b466a6342362e676966.gif&amp;originHeight=768&amp;originWidth=1092&amp;size=173254&amp;status=done&amp;width=1092" alt="68747470733a2f2f692e636c6f756475702e636f6d2f634973734b466a6342362e676966.gif"><br />
+<p>13、<a href="https://github.com/jdan/cleaver">Cleaver</a>是一个基于HTML5，可以用最短的时间做出超炫幻灯片的小工具。<br /><img src="https://cdn.nlark.com/yuque/0/2019/gif/173770/1561872657674-a9789288-dd2f-4e79-96c5-d0f62d1163d6.gif#align=left&amp;display=inline&amp;height=768&amp;name=68747470733a2f2f692e636c6f756475702e636f6d2f634973734b466a6342362e676966.gif&amp;originHeight=768&amp;originWidth=1092&amp;size=173254&amp;status=done&amp;width=1092" alt="68747470733a2f2f692e636c6f756475702e636f6d2f634973734b466a6342362e676966.gif"><br /><br>
 14、<a href="https://tucao.qq.com/">“吐个槽”反馈平台</a> 腾讯推出的工具，几行代码就可以为页面加入一个互动社区，可以接入应用程序、小程序、WEB、H5、微信公众号等各端。</p>
 ]]></content>
     </entry>
@@ -1110,12 +1110,12 @@ window.customElements.define('num-counter', Counter);
         <link href="https://ducenand.github.io//post/yi-lai-nodejs">
         </link>
         <updated>2019-06-27T00:31:51.000Z</updated>
-        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png">
+        <summary type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"><br>
 <a name="mxMDY"></a></p>
 <h3 id="背景">背景</h3>
 <p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png">
+        <content type="html"><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"><br>
 <a name="mxMDY"></a></p>
 <h3 id="背景">背景</h3>
 <p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
@@ -1123,28 +1123,28 @@ window.customElements.define('num-counter', Counter);
 <p><a name="cutZq"></a></p>
 <h3 id="简单了解nodejs">简单了解Nodejs</h3>
 <blockquote>
-<p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 
+<p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 <br>
 Node.js 使用了一个<strong>事件驱动</strong>、<strong>非阻塞式 I/O</strong> 的模型，使其轻量又高效。</p>
 </blockquote>
-<p>以上是官方给出的解释，惯例我们还是抽取关键词理解。
+<p>以上是官方给出的解释，惯例我们还是抽取关键词理解。<br>
 <a name="fTNxv"></a></p>
 <h4 id="chrome-v8-引擎介绍">Chrome V8 引擎介绍</h4>
-<p>V8 引擎是Chrome于2008年9月2日发布开源。V8使用C++开发，相比其它的JavaScript的引擎转换成<a href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81">字节码</a>或<a href="https://baike.baidu.com/item/%E8%A7%A3%E9%87%8A%E6%89%A7%E8%A1%8C">解释执行</a>，V8将其编译成原生<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E7%A0%81">机器码</a>（<a href="https://baike.baidu.com/item/IA-32">IA-32</a>, <a href="https://baike.baidu.com/item/x86-64">x86-64</a>, <a href="https://baike.baidu.com/item/ARM/7518299">ARM</a>, or <a href="https://baike.baidu.com/item/MIPS">MIPS</a> CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的<strong>运行速度媲美二进制程序</strong>。<br />Chrome浏览器在Webkit渲染引擎中使用v8引擎来提高浏览器的渲染性能。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560989504270-19142662-a597-434f-bda5-9cf7fe586b73.png#align=left&amp;display=inline&amp;height=311&amp;name=image.png&amp;originHeight=622&amp;originWidth=1192&amp;size=302086&amp;status=done&amp;width=596" alt="image.png"><br />上图是webkit大致结构，红色部分是webkit的默认引擎，在谷歌系列产品中被替换为v8引擎；<br />Nodejs是站在“<strong>巨人的肩膀</strong>”上进行一系列的封装，它的高性能，离不开Chorme V8引擎。
+<p>V8 引擎是Chrome于2008年9月2日发布开源。V8使用C++开发，相比其它的JavaScript的引擎转换成<a href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81">字节码</a>或<a href="https://baike.baidu.com/item/%E8%A7%A3%E9%87%8A%E6%89%A7%E8%A1%8C">解释执行</a>，V8将其编译成原生<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E7%A0%81">机器码</a>（<a href="https://baike.baidu.com/item/IA-32">IA-32</a>, <a href="https://baike.baidu.com/item/x86-64">x86-64</a>, <a href="https://baike.baidu.com/item/ARM/7518299">ARM</a>, or <a href="https://baike.baidu.com/item/MIPS">MIPS</a> CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的<strong>运行速度媲美二进制程序</strong>。<br />Chrome浏览器在Webkit渲染引擎中使用v8引擎来提高浏览器的渲染性能。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560989504270-19142662-a597-434f-bda5-9cf7fe586b73.png#align=left&amp;display=inline&amp;height=311&amp;name=image.png&amp;originHeight=622&amp;originWidth=1192&amp;size=302086&amp;status=done&amp;width=596" alt="image.png"><br />上图是webkit大致结构，红色部分是webkit的默认引擎，在谷歌系列产品中被替换为v8引擎；<br />Nodejs是站在“<strong>巨人的肩膀</strong>”上进行一系列的封装，它的高性能，离不开Chorme V8引擎。<br>
 <a name="OOZYg"></a></p>
 <h4 id="javascript-运行环境">JavaScript 运行环境</h4>
 <p>Javascript 是一个静态脚本语言，运行时必须要借助于引擎才能运行。<br />Javascript 运行环境一般分为两种：</p>
 <ul>
 <li>浏览器运行环境 （ 通常我们写的js代码要在浏览器中才能运行）</li>
-<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）
+<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）<br>
 <a name="LSuE2"></a></li>
 </ul>
 <h4 id="事件驱动">事件驱动</h4>
-<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。
+<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。<br>
 <a name="jBoeo"></a></p>
 <h4 id="非阻塞-io">非阻塞 I/O</h4>
-<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />
-**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br />
-**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
+<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br /><br>
+**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br /><br>
+**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br /><br>
 <br />在Nodejs里面单线程可以通过回调函数（事件驱动）来做异步操作，达到非阻塞I/O的效果。</p>
 <p><a name="ROAQP"></a></p>
 <h3 id="安装nodejs">安装Nodejs</h3>
@@ -1182,7 +1182,7 @@ npm -v
 <ul>
 <li>require:引入一个模块</li>
 <li>exports: 导出模块内容</li>
-<li>module: 模块本身
+<li>module: 模块本身<br>
 <a name="34sz0"></a></li>
 </ul>
 <h4 id="使用nodejs创建服务">使用Nodejs创建服务</h4>
@@ -1202,7 +1202,7 @@ server.listen(port, hostname, () =&gt; {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 </code></pre>
-<p>运行 <code>node index.js</code> 会起一个去 <code>127.0.0.1:3000</code> 的服务，并在浏览器中输出<code>Hello world</code><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561560892621-cd119fbb-e53c-465b-9fb9-7d9c4e3a7238.png#align=left&amp;display=inline&amp;height=110&amp;name=image.png&amp;originHeight=220&amp;originWidth=480&amp;size=18190&amp;status=done&amp;width=240" alt="image.png">
+<p>运行 <code>node index.js</code> 会起一个去 <code>127.0.0.1:3000</code> 的服务，并在浏览器中输出<code>Hello world</code><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561560892621-cd119fbb-e53c-465b-9fb9-7d9c4e3a7238.png#align=left&amp;display=inline&amp;height=110&amp;name=image.png&amp;originHeight=220&amp;originWidth=480&amp;size=18190&amp;status=done&amp;width=240" alt="image.png"><br>
 <a name="nbTh4"></a></p>
 <h4 id="了解基础api">了解基础API</h4>
 <p><code>path</code> 模块提供用于处理文件路径和目录路径的实用工具。</p>

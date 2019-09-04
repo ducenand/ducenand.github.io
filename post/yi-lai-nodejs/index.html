@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1567046620121">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1567597379937">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ducenand.github.io/">
-        <img src="https://ducenand.github.io//images/avatar.png?v=1567046620121" class="site-logo">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1567597379937" class="site-logo">
         <h1 class="site-title">似水流年</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -115,7 +115,7 @@
             <div class="post-date">2019-06-27</div>
             
             <div class="post-content">
-              <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png">
+              <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560946813959-89c89678-4d53-4294-a0ce-44ef96244af2.png#align=left&amp;display=inline&amp;height=352&amp;name=image.png&amp;originHeight=704&amp;originWidth=1748&amp;size=303588&amp;status=done&amp;width=874" alt="image.png"><br>
 <a name="mxMDY"></a></p>
 <h3 id="背景">背景</h3>
 <p>在<a href="https://ducenand.github.io/post/webpack-yu-gruntgulp-de-qu-bie/">前端历史演变</a>中已经提到，Nodejs的爆发从2009年开始。Nodejs的出现，基于作者Ryan Dahl 对Web开发高性能的追求，要达到高性能，异步IO/事件驱动是基本原则。对比一些高级语言，最终选择Javascript作为开发语言,由于Javascript天生的事件驱动和单线程，奠定了Nodejs编写高性能Web服务轻而易举。</p>
@@ -123,28 +123,28 @@
 <p><a name="cutZq"></a></p>
 <h3 id="简单了解nodejs">简单了解Nodejs</h3>
 <blockquote>
-<p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 
+<p>Node.js 是一个基于 <strong>Chrome V8 引擎</strong>的 <strong>JavaScript 运行环境</strong>。 <br>
 Node.js 使用了一个<strong>事件驱动</strong>、<strong>非阻塞式 I/O</strong> 的模型，使其轻量又高效。</p>
 </blockquote>
-<p>以上是官方给出的解释，惯例我们还是抽取关键词理解。
+<p>以上是官方给出的解释，惯例我们还是抽取关键词理解。<br>
 <a name="fTNxv"></a></p>
 <h4 id="chrome-v8-引擎介绍">Chrome V8 引擎介绍</h4>
-<p>V8 引擎是Chrome于2008年9月2日发布开源。V8使用C++开发，相比其它的JavaScript的引擎转换成<a href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81">字节码</a>或<a href="https://baike.baidu.com/item/%E8%A7%A3%E9%87%8A%E6%89%A7%E8%A1%8C">解释执行</a>，V8将其编译成原生<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E7%A0%81">机器码</a>（<a href="https://baike.baidu.com/item/IA-32">IA-32</a>, <a href="https://baike.baidu.com/item/x86-64">x86-64</a>, <a href="https://baike.baidu.com/item/ARM/7518299">ARM</a>, or <a href="https://baike.baidu.com/item/MIPS">MIPS</a> CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的<strong>运行速度媲美二进制程序</strong>。<br />Chrome浏览器在Webkit渲染引擎中使用v8引擎来提高浏览器的渲染性能。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560989504270-19142662-a597-434f-bda5-9cf7fe586b73.png#align=left&amp;display=inline&amp;height=311&amp;name=image.png&amp;originHeight=622&amp;originWidth=1192&amp;size=302086&amp;status=done&amp;width=596" alt="image.png"><br />上图是webkit大致结构，红色部分是webkit的默认引擎，在谷歌系列产品中被替换为v8引擎；<br />Nodejs是站在“<strong>巨人的肩膀</strong>”上进行一系列的封装，它的高性能，离不开Chorme V8引擎。
+<p>V8 引擎是Chrome于2008年9月2日发布开源。V8使用C++开发，相比其它的JavaScript的引擎转换成<a href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81">字节码</a>或<a href="https://baike.baidu.com/item/%E8%A7%A3%E9%87%8A%E6%89%A7%E8%A1%8C">解释执行</a>，V8将其编译成原生<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E7%A0%81">机器码</a>（<a href="https://baike.baidu.com/item/IA-32">IA-32</a>, <a href="https://baike.baidu.com/item/x86-64">x86-64</a>, <a href="https://baike.baidu.com/item/ARM/7518299">ARM</a>, or <a href="https://baike.baidu.com/item/MIPS">MIPS</a> CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的<strong>运行速度媲美二进制程序</strong>。<br />Chrome浏览器在Webkit渲染引擎中使用v8引擎来提高浏览器的渲染性能。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1560989504270-19142662-a597-434f-bda5-9cf7fe586b73.png#align=left&amp;display=inline&amp;height=311&amp;name=image.png&amp;originHeight=622&amp;originWidth=1192&amp;size=302086&amp;status=done&amp;width=596" alt="image.png"><br />上图是webkit大致结构，红色部分是webkit的默认引擎，在谷歌系列产品中被替换为v8引擎；<br />Nodejs是站在“<strong>巨人的肩膀</strong>”上进行一系列的封装，它的高性能，离不开Chorme V8引擎。<br>
 <a name="OOZYg"></a></p>
 <h4 id="javascript-运行环境">JavaScript 运行环境</h4>
 <p>Javascript 是一个静态脚本语言，运行时必须要借助于引擎才能运行。<br />Javascript 运行环境一般分为两种：</p>
 <ul>
 <li>浏览器运行环境 （ 通常我们写的js代码要在浏览器中才能运行）</li>
-<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）
+<li>非浏览器运行环境 （比如Nodejs,借助于V8引擎实现运行的环境）<br>
 <a name="LSuE2"></a></li>
 </ul>
 <h4 id="事件驱动">事件驱动</h4>
-<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。
+<p>我们在Javascript中注册个事件（回调函数）。但这个事件不是马上执行。只有等事件被触发的时候，才会去执行这个事件（回调函数）。这种形式就是事件驱动。<br>
 <a name="jBoeo"></a></p>
 <h4 id="非阻塞-io">非阻塞 I/O</h4>
-<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br />
-**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br />
-**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br />
+<p>**阻塞：**前一个程序未执行完就得一直等待。比如当你打电话问个问题时，那边说你等等我给你查查，这时候你电话仍然是挂起的，等待等待，直到拿到结果。 <br /><br>
+**非阻塞：**前一个程序未执行完时可以挂起，继续执行其他程序，等到使用时再执行。比如当你打电话过去问一个问题，然后挂电话，等那边找到结果就打电话给你。查问题这段时间，你该干嘛就干嘛。<br /><br>
+**I/O: **磁盘的写入（in）磁盘的读取（out）。在程序执行过程中必然要进行很多I/O操作，读写文件、输入输出、请求响应等等。I/O操作时最费时，举个例子，你要读一个文件，整个线程都暂停下来，等待文件读完后继续执行。换言之，I/O操作阻塞了代码的执行，极大地降低了程序的效率。<br /><br>
 <br />在Nodejs里面单线程可以通过回调函数（事件驱动）来做异步操作，达到非阻塞I/O的效果。</p>
 <p><a name="ROAQP"></a></p>
 <h3 id="安装nodejs">安装Nodejs</h3>
@@ -182,7 +182,7 @@ npm -v
 <ul>
 <li>require:引入一个模块</li>
 <li>exports: 导出模块内容</li>
-<li>module: 模块本身
+<li>module: 模块本身<br>
 <a name="34sz0"></a></li>
 </ul>
 <h4 id="使用nodejs创建服务">使用Nodejs创建服务</h4>
@@ -202,7 +202,7 @@ server.listen(port, hostname, () =&gt; {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 </code></pre>
-<p>运行 <code>node index.js</code> 会起一个去 <code>127.0.0.1:3000</code> 的服务，并在浏览器中输出<code>Hello world</code><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561560892621-cd119fbb-e53c-465b-9fb9-7d9c4e3a7238.png#align=left&amp;display=inline&amp;height=110&amp;name=image.png&amp;originHeight=220&amp;originWidth=480&amp;size=18190&amp;status=done&amp;width=240" alt="image.png">
+<p>运行 <code>node index.js</code> 会起一个去 <code>127.0.0.1:3000</code> 的服务，并在浏览器中输出<code>Hello world</code><br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561560892621-cd119fbb-e53c-465b-9fb9-7d9c4e3a7238.png#align=left&amp;display=inline&amp;height=110&amp;name=image.png&amp;originHeight=220&amp;originWidth=480&amp;size=18190&amp;status=done&amp;width=240" alt="image.png"><br>
 <a name="nbTh4"></a></p>
 <h4 id="了解基础api">了解基础API</h4>
 <p><code>path</code> 模块提供用于处理文件路径和目录路径的实用工具。</p>

@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1567046620121">
+<link rel="shortcut icon" href="https://ducenand.github.io//favicon.ico?v=1567597379937">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ducenand.github.io//styles/main.css">
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ducenand.github.io/">
-        <img src="https://ducenand.github.io//images/avatar.png?v=1567046620121" class="site-logo">
+        <img src="https://ducenand.github.io//images/avatar.png?v=1567597379937" class="site-logo">
         <h1 class="site-title">似水流年</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -135,14 +135,14 @@
 <ul>
 <li><strong>命令行工具 (CLI)</strong></li>
 </ul>
-<p>通过命令行和终端运行，开发者通过CLI与NPM打交道。<br />
+<p>通过命令行和终端运行，开发者通过CLI与NPM打交道。<br /><br>
 <br /><strong>在安装Node.js时会默认安装NPM包管理器</strong>，NPM完全由Javascript写成，和模块没啥区别，所以我们可以<code>npm install -g npm</code> 更新安装自己。</p>
 <p>随着前端工程化、模块化的快速发展，前端开发已经离不开npm包管理器了。在我们使用前端各大框架Vue、React、Angluar时，我们只需要<code>npm install [package name]</code>就可以安装使用我们需要的模块包，非常便捷高效。</p>
-<p>通过下图我们就能看出npm之火爆。总包量<strong>100多万</strong>，周下载量<strong>114亿</strong>。来自各大洲的开源软件开发者都在使用npm借鉴学习或者分享。同时也是Node.js获得成功重要原因之一。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562048207944-8e13b476-0e68-40f7-8b75-2db48a93ad3a.png#align=left&amp;display=inline&amp;height=281&amp;name=image.png&amp;originHeight=562&amp;originWidth=680&amp;size=41349&amp;status=done&amp;width=340" alt="image.png">
+<p>通过下图我们就能看出npm之火爆。总包量<strong>100多万</strong>，周下载量<strong>114亿</strong>。来自各大洲的开源软件开发者都在使用npm借鉴学习或者分享。同时也是Node.js获得成功重要原因之一。<br /><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1562048207944-8e13b476-0e68-40f7-8b75-2db48a93ad3a.png#align=left&amp;display=inline&amp;height=281&amp;name=image.png&amp;originHeight=562&amp;originWidth=680&amp;size=41349&amp;status=done&amp;width=340" alt="image.png"><br>
 <a name="nDQ9W"></a></p>
 <h3 id="npm命令以及使用">NPM命令以及使用</h3>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/png/173770/1561983337245-ad4b5fe6-37e5-4e14-ad3f-1bb27a64813a.png#align=left&amp;display=inline&amp;height=267&amp;name=image.png&amp;originHeight=534&amp;originWidth=1592&amp;size=101353&amp;status=done&amp;width=796" alt="image.png"></p>
-<p>以上图片罗列出NPM所有的命令，捡几个常用的命令学习；
+<p>以上图片罗列出NPM所有的命令，捡几个常用的命令学习；<br>
 <a name="Cs98I"></a></p>
 <h4 id="npm-install-安装模块">npm install 安装模块</h4>
 <p>安装形式：</p>
@@ -415,7 +415,7 @@ Password:
 Email: (this IS public) 316358726@qq.com
 Logged in as alan-du on https://registry.npmjs.org/.
 </code></pre>
-<p>用户登录后，可以向npm发送包。
+<p>用户登录后，可以向npm发送包。<br>
 <a name="3YghP"></a></p>
 <h4 id="npm-publish-发布模块">npm publish 发布模块</h4>
 <pre><code class="language-bash">npm publish [&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;] [--otp otpcode] [--dry-run]
@@ -552,16 +552,16 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 </code></pre>
 <p><a name="qKeJh"></a></p>
 <h4 id="name">name</h4>
-<p>在package.json中最重要的就是name和version字段。他们都是必须的，如果没有就无法install。name和version一起组成的标识在假设中是唯一的。改变包应该同时改变version。
+<p>在package.json中最重要的就是name和version字段。他们都是必须的，如果没有就无法install。name和version一起组成的标识在假设中是唯一的。改变包应该同时改变version。<br>
 <a name="Tpyw6"></a></p>
 <h4 id="version">version</h4>
-<p>version必须能被<a href="https://github.com/isaacs/node-semver">node-semver</a>解析，它被包在npm的依赖中。（要自己用可以执行<code>npm install semver</code>）<br />可用的“数字”或者“范围”见下文<strong>语义化版本控制范围SemVer</strong>.
+<p>version必须能被<a href="https://github.com/isaacs/node-semver">node-semver</a>解析，它被包在npm的依赖中。（要自己用可以执行<code>npm install semver</code>）<br />可用的“数字”或者“范围”见下文<strong>语义化版本控制范围SemVer</strong>.<br>
 <a name="lk9iR"></a></p>
 <h4 id="description">description</h4>
-<p>放简介，字符串，方便在<code>npm search</code>中搜索
+<p>放简介，字符串，方便在<code>npm search</code>中搜索<br>
 <a name="ANz7c"></a></p>
 <h4 id="keywords">keywords</h4>
-<p>关键字，数组、字符串，方便在<code>npm search</code>中搜索
+<p>关键字，数组、字符串，方便在<code>npm search</code>中搜索<br>
 <a name="qFi4h"></a></p>
 <h4 id="bugs">bugs</h4>
 <p>项目提交问题的url和（或）邮件地址</p>
@@ -599,7 +599,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 		...
  },
 </code></pre>
-<p>更多详细请看 <a href="https://npmjs.org/doc/misc/npm-scripts.html">npm-scripts(7)</a>
+<p>更多详细请看 <a href="https://npmjs.org/doc/misc/npm-scripts.html">npm-scripts(7)</a><br>
 <a name="obARB"></a></p>
 <h4 id="config">config</h4>
 <pre><code class="language-json">&quot;config&quot;: {
@@ -608,7 +608,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
     }
  }
 </code></pre>
-<p>config对象可用于设置在升级过程中持久存在的程序包脚本中使用的配置参数。例如，如果包具有以下内容：
+<p>config对象可用于设置在升级过程中持久存在的程序包脚本中使用的配置参数。例如，如果包具有以下内容：<br>
 <a name="v2B9P"></a></p>
 <h4 id="dependencies">dependencies</h4>
 <p>生产依赖包，请不要将测试或过渡性的依赖放在<code>dependencies</code>中。</p>
@@ -642,7 +642,7 @@ npm dist-tag rm alan-npm-test alan-npm-test@1.0.2-0
 <h4 id="semver-两个概念">SemVer 两个概念</h4>
 <ul>
 <li>固定版本：是指例如 0.4.1、1.2.7、1.2.4-beta.0 这样表示包的特定版本的字符串；</li>
-<li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4；
+<li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4；<br>
 <a name="Po3hr"></a></li>
 </ul>
 <h4 id=""></h4>
